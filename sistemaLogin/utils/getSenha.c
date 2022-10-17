@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 #include<conio.h>
 
 #define ENTER 13
@@ -24,14 +25,14 @@ const char* getSenha(const int tamanhoMaxSenha){
             }
         }
         if(caracterSenhaAtual == BACKSPACE && indiceSenha>0){
-            putch('\b');
-            putch(NULL);
-            putch('\b');
+            putch(BACKSPACE);
+            putch(NULL_CHARACTER);
+            putch(BACKSPACE);
             indiceSenha-=2;
         } else if(caracterSenhaAtual == BACKSPACE && indiceSenha<=0){
             indiceSenha--;
         } else if(caracterSenhaAtual == CTRLC){
-            printf("\nAbortando programa......\n");
+            printf("\n\nAbortando programa......\n");
             exit(1);
         }
     }
