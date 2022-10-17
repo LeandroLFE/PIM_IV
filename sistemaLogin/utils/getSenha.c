@@ -27,14 +27,14 @@ const char* getSenha(const int tamanhoMaxSenha){
             }
         }
         if(caracterSenhaAtual == BACKSPACE && indiceSenha>0){
-            putch('\b');
-            putch(NULL);
-            putch('\b');
+            putch(BACKSPACE);
+            putch(NULL_CHARACTER);
+            putch(BACKSPACE);
             indiceSenha-=2;
         } else if(caracterSenhaAtual == BACKSPACE && indiceSenha<=0){
             indiceSenha--;
         } else if(caracterSenhaAtual == CTRLC){
-            printf("\n%sAbortando programa......%s\n", colorir('v'), colorir('r'));
+            printf("\n\n%sAbortando programa......%s\n\n", colorir('v'), colorir('r'));
             exit(1);
         }
     }
