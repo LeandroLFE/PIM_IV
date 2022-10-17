@@ -6,6 +6,10 @@
 
 #define NULL_CHARACTER '\0'
 
+//cores
+#define VERMELHO_CLARO 12
+#define BRANCO 15
+
 int login(const char* user, const int tamanhoMaxUsuario, const char* password, const int tamanhoMaxSenha){
     FILE* pArquivo;
     char usuario[tamanhoMaxUsuario];
@@ -15,7 +19,9 @@ int login(const char* user, const int tamanhoMaxUsuario, const char* password, c
     pArquivo = fopen("./arquivos/entrada/login.txt", "r");
 
     if(pArquivo == NULL){
-        printf("\n%sErro ao tentar abrir arquivo, contate o administrador%s\n", colorir('v'), colorir('r'));
+        setColor(VERMELHO_CLARO);
+        printf("\nErro ao tentar abrir arquivo, contate o administrador\n");
+        setColor(BRANCO);
         exit(-1);
     }
 

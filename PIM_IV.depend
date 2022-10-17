@@ -1,14 +1,14 @@
 # depslib dependency file v1.0
-1665977808 source:d:\documentos\unip\4_bimestre\pim_iv\main.c
+1666040317 source:d:\documentos\unip\4_bimestre\pim_iv\main.c
 	<stdio.h>
 	<stdlib.h>
 	"headers/headers_programa.h"
 
 1665944338 d:\documentos\unip\4_bimestre\pim_iv\headers\sistemalogin.h
 
-1665978161 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\sistemalogin.c
+1666040244 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\sistemalogin.c
 	<stdio.h>
-	<stdlib.h>
+	<string.h>
 	<windows.h>
 	"../headers/headers_programa.h"
 
@@ -16,33 +16,40 @@
 	<stdio.h>
 	<string.h>
 
-1665977405 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\getsenha.c
+1666040244 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\getsenha.c
+	<conio.h>
 	<stdio.h>
 	<stdlib.h>
-	<conio.h>
+	<windows.h>
 	"../../headers/headers_programa.h"
 
 1665958842 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\trimespacosembranco.c
 	<stdio.h>
 	<string.h>
 
-1665978236 d:\documentos\unip\4_bimestre\pim_iv\headers\headers_programa.h
+1666039319 d:\documentos\unip\4_bimestre\pim_iv\headers\headers_programa.h
+	<windows.h>
 
-1665977405 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\getusuario.c
+1666040317 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\getusuario.c
 	<stdio.h>
 	<string.h>
 	"../../headers/headers_programa.h"
 
-1665978252 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\login.c
+1666040317 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\login.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"../../headers/headers_programa.h"
 
-1665977405 source:d:\documentos\unip\4_bimestre\pim_iv\utils\trimespacosembranco.c
+1666034708 source:d:\documentos\unip\4_bimestre\pim_iv\utils\trimespacosembranco.c
 	<stdio.h>
 	<string.h>
 
-1665977405 source:d:\documentos\unip\4_bimestre\pim_iv\utils\cores_terminal.c
-	<stdlib.h>
+1666039343 source:d:\documentos\unip\4_bimestre\pim_iv\utils\cores_terminal.c
+	<stdio.h>
+	<windows.h>
+	"../headers/headers_programa.h"
+
+1666034708 source:d:\documentos\unip\4_bimestre\pim_iv\utils\clearscreen.c
+	<windows.h>
 

@@ -8,4 +8,6 @@ const char* getUsuario(const int tamanhoMaxUsuario);
 
 int login(const char* user, const int tamanhoMaxUsuario, const char* password, const int tamanhoMaxSenha);
 
+void setColor(int ForgC);
+
 const char* trimEspacosEmBrancoGetS(const int tamanhoMaxUsuario);

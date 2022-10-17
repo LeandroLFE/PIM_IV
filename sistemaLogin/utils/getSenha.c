@@ -5,11 +5,17 @@
 
 #include "../../headers/headers_programa.h"
 
+
+//caracteres
 #define ENTER 13
 #define BACKSPACE 8
 #define CTRLC 3
 #define ENTER 13
 #define NULL_CHARACTER '\0'
+
+//cores
+#define VERMELHO_CLARO 12
+#define BRANCO 15
 
 
 const char* getSenha(const int tamanhoMaxSenha){
@@ -47,7 +53,9 @@ const char* getSenha(const int tamanhoMaxSenha){
                 Beep(400, 1);
             }
         } else if(caracterSenhaAtual == CTRLC){
-            printf("\n\n%sAbortando programa......%s\n\n", colorir('v'), colorir('r'));
+            setColor(VERMELHO_CLARO);
+            printf("\n\nAbortando programa......\n\n");
+            setColor(BRANCO);
             exit(1);
         }
     }
