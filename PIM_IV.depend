@@ -1,20 +1,20 @@
 # depslib dependency file v1.0
-1665974289 source:d:\documentos\unip\4_bimestre\pim_iv\main.c
+1665976041 source:d:\documentos\unip\4_bimestre\pim_iv\main.c
 	<stdio.h>
-	<string.h>
 	"headers/headers_programa.h"
 
 1665944338 d:\documentos\unip\4_bimestre\pim_iv\headers\sistemalogin.h
 
-1665974506 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\sistemalogin.c
+1665976970 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\sistemalogin.c
 	<stdio.h>
+	<windows.h>
 	"../headers/headers_programa.h"
 
 1665932785 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\sistemalogin2.c
 	<stdio.h>
 	<string.h>
 
-1665974289 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\getsenha.c
+1665975978 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\getsenha.c
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>
@@ -24,23 +24,23 @@
 	<stdio.h>
 	<string.h>
 
-1665974289 d:\documentos\unip\4_bimestre\pim_iv\headers\headers_programa.h
+1665975920 d:\documentos\unip\4_bimestre\pim_iv\headers\headers_programa.h
 
-1665974213 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\getusuario.c
+1665975920 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\getusuario.c
 	<stdio.h>
 	<string.h>
 	"../../headers/headers_programa.h"
 
-1665974289 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\login.c
+1665975920 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\login.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"../../headers/headers_programa.h"
 
-1665974213 source:d:\documentos\unip\4_bimestre\pim_iv\utils\trimespacosembranco.c
+1665975920 source:d:\documentos\unip\4_bimestre\pim_iv\utils\trimespacosembranco.c
 	<stdio.h>
 	<string.h>
 
-1665974213 source:d:\documentos\unip\4_bimestre\pim_iv\utils\cores_terminal.c
+1665975920 source:d:\documentos\unip\4_bimestre\pim_iv\utils\cores_terminal.c
 	<stdlib.h>
 

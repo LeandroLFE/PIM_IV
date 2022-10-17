@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 #include "../headers/headers_programa.h"
 
@@ -17,6 +18,7 @@ int sistemaLogin(const int tamanhoMaxUsuario, const int tamanhoMaxSenha){
 
         if(resultadoLogin != 0){
             printf("\n\n%sUsuario/Senha invalidos, tente novamente%s\n\n", colorir('v'), colorir('r'));
+            system("clear");
         }
     }while(resultadoLogin != 0);
 
