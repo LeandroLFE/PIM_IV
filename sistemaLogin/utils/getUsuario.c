@@ -3,15 +3,16 @@
 
 #include "../../headers/headers_programa.h"
 
-const char* getUsuario(int tamanhoMaxUsuario){
-    const char* usuario;
+const char* getUsuario(const int tamanhoMaxUsuario){
+    char usuario[tamanhoMaxUsuario];
+    const char* retorno;
     do{
         printf("\nInforme seu usuario: ");
-        usuario = trimEspacosEmBrancoGetS(tamanhoMaxUsuario);
+        strcpy(usuario, trimEspacosEmBrancoGetS(tamanhoMaxUsuario));
         if(strcmp(usuario, "")==0){
             printf("\nUsuario nao informado, tente novamente\n");
         }
     }while(strcmp(usuario, "")==0);
-
-    return usuario;
+    retorno = usuario;
+    return retorno;
 }

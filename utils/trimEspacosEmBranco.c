@@ -6,10 +6,13 @@
 
 const char* trimEspacosEmBrancoGetS(const int tamanhoMaxUsuario){
     char stringInicial[tamanhoMaxUsuario];
-    char novaString[strlen(stringInicial)];
+    char novaString[tamanhoMaxUsuario];
     const char* retorno;
     int lTrimIndex = 0;
-    gets(stringInicial);
+
+    fgets(stringInicial, tamanhoMaxUsuario, stdin);
+    stringInicial[strlen(stringInicial)-1] = NULL_CHARACTER;
+
     int rTrimIndex = strlen(stringInicial)-1;
 
     if(strcmp(stringInicial, "")==0){
