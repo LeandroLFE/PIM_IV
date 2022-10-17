@@ -3,8 +3,8 @@
 
 #include "headers/headers_programa.h"
 
-#define TAMANHO_MAX_USUARIO 50
-#define TAMANHO_MAX_SENHA 128
+#define TAMANHO_MAX_USUARIO 15
+#define TAMANHO_MAX_SENHA 15
 
 int main(void){
     int login;

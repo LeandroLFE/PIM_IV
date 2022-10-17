@@ -1,4 +1,6 @@
-const char* colorir(char cor);
+#include<windows.h>
+
+void clearScreen(HANDLE hConsole);
 
 const char* getSenha(const int tamanhoMaxSenha);
 
