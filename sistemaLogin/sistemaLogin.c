@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include <windows.h>
 
 #include "../headers/headers_programa.h"
 
@@ -8,6 +9,7 @@ int sistemaLogin(const int tamanhoMaxUsuario, const int tamanhoMaxSenha){
     const char* senha;
     int resultadoLogin;
     do{
+        system("cls");
         printf("************************************");
         printf("\n*******BEM VINDO AO SISTEMA*********");
         printf("\n************************************\n");
@@ -18,7 +20,7 @@ int sistemaLogin(const int tamanhoMaxUsuario, const int tamanhoMaxSenha){
 
         if(resultadoLogin != 0){
             printf("\n\n%sUsuario/Senha invalidos, tente novamente%s\n\n", colorir('v'), colorir('r'));
-            system("clear");
+            Sleep(450);
         }
     }while(resultadoLogin != 0);
 

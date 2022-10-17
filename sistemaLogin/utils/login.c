@@ -6,7 +6,7 @@
 
 #define NULL_CHARACTER '\0'
 
-int login(char* user, const int tamanhoMaxUsuario, char* password, const int tamanhoMaxSenha){
+int login(const char* user, const int tamanhoMaxUsuario, const char* password, const int tamanhoMaxSenha){
     FILE* pArquivo;
     char usuario[tamanhoMaxUsuario];
     char senha[tamanhoMaxSenha];
