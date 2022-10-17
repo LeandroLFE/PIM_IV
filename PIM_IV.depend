@@ -1,12 +1,14 @@
 # depslib dependency file v1.0
-1665976041 source:d:\documentos\unip\4_bimestre\pim_iv\main.c
+1665977808 source:d:\documentos\unip\4_bimestre\pim_iv\main.c
 	<stdio.h>
+	<stdlib.h>
 	"headers/headers_programa.h"
 
 1665944338 d:\documentos\unip\4_bimestre\pim_iv\headers\sistemalogin.h
 
-1665976970 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\sistemalogin.c
+1665978161 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\sistemalogin.c
 	<stdio.h>
+	<stdlib.h>
 	<windows.h>
 	"../headers/headers_programa.h"
 
@@ -14,7 +16,7 @@
 	<stdio.h>
 	<string.h>
 
-1665975978 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\getsenha.c
+1665977405 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\getsenha.c
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>
@@ -24,23 +26,23 @@
 	<stdio.h>
 	<string.h>
 
-1665975920 d:\documentos\unip\4_bimestre\pim_iv\headers\headers_programa.h
+1665978236 d:\documentos\unip\4_bimestre\pim_iv\headers\headers_programa.h
 
-1665975920 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\getusuario.c
+1665977405 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\getusuario.c
 	<stdio.h>
 	<string.h>
 	"../../headers/headers_programa.h"
 
-1665975920 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\login.c
+1665978252 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\login.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"../../headers/headers_programa.h"
 
-1665975920 source:d:\documentos\unip\4_bimestre\pim_iv\utils\trimespacosembranco.c
+1665977405 source:d:\documentos\unip\4_bimestre\pim_iv\utils\trimespacosembranco.c
 	<stdio.h>
 	<string.h>
 
-1665975920 source:d:\documentos\unip\4_bimestre\pim_iv\utils\cores_terminal.c
+1665977405 source:d:\documentos\unip\4_bimestre\pim_iv\utils\cores_terminal.c
 	<stdlib.h>
 
