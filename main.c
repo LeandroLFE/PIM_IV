@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<string.h>
 
 #include "headers/headers_programa.h"
 
@@ -7,22 +6,14 @@
 #define TAMANHO_MAX_SENHA 128
 
 int main(void){
-    const char* usuario;
-    const char* senha;
-    int resultadoLogin;
-    do{
-        printf("************************************");
-        printf("\n*******BEM VINDO AO SISTEMA*********");
-        printf("\n************************************\n");
+    int login;
 
-        usuario = getUsuario(TAMANHO_MAX_USUARIO);
-        senha = getSenha(TAMANHO_MAX_SENHA);
-        resultadoLogin = login(usuario, TAMANHO_MAX_USUARIO, senha, TAMANHO_MAX_SENHA);
+    login = sistemaLogin(TAMANHO_MAX_USUARIO, TAMANHO_MAX_SENHA);
 
-        if(resultadoLogin != 0){
-            printf("\nUsuario/Senha invalidos, tente novamente\n");
-        }
-    }while(resultadoLogin != 0);
+    if(login != 0){
+        printf("\nUm erro ocorreu, contate o administrador\n");
+        exit(-2);
+    }
 
     printf("\n\nLogin realizado com sucesso!\n");
 

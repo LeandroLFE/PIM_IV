@@ -4,7 +4,7 @@
 #define NULL_CHARACTER '\0'
 #define ESPACO 32
 
-const char* trimEspacosEmBrancoGetS(int tamanhoMaxUsuario){
+const char* trimEspacosEmBrancoGetS(const int tamanhoMaxUsuario){
     char stringInicial[tamanhoMaxUsuario];
     char novaString[strlen(stringInicial)];
     const char* retorno;

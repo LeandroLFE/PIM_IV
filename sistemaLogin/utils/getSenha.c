@@ -7,7 +7,7 @@
 #define NULL_CHARACTER '\0'
 
 
-const char* getSenha(int tamanhoMaxSenha){
+const char* getSenha(const int tamanhoMaxSenha){
     char senha[tamanhoMaxSenha];
     char caracterSenhaAtual = 0;
     const char *retorno;
