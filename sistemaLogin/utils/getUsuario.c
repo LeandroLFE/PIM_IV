@@ -3,7 +3,7 @@
 
 #include "../../headers/headers_programa.h"
 
-const char* getUsuario(int tamanhoMaxUsuario){
+const char* getUsuario(const int tamanhoMaxUsuario){
     const char* usuario;
     do{
         printf("\nInforme seu usuario: ");
