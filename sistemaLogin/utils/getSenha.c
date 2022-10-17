@@ -7,7 +7,7 @@
 #define NULL_CHARACTER '\0'
 
 
-const char* getSenha(int tamanhoMaxSenha){
+const char* getSenha(const int tamanhoMaxSenha){
     char senha[tamanhoMaxSenha];
     char caracterSenhaAtual = 0;
     const char *retorno;
@@ -20,7 +20,7 @@ const char* getSenha(int tamanhoMaxSenha){
             senha[indiceSenha] = caracterSenhaAtual;
             putch('*');
             if(indiceSenha + 1 == tamanhoMaxSenha){
-                printf("\nTamanho maximo da senha atingido, a senha ira ate aqui\n");
+                printf("\n%sTamanho maximo da senha atingido, a senha ira ate aqui%s\n", colorir('v'), colorir('r'));
             }
         }
         if(caracterSenhaAtual == BACKSPACE && indiceSenha>0){
@@ -31,7 +31,7 @@ const char* getSenha(int tamanhoMaxSenha){
         } else if(caracterSenhaAtual == BACKSPACE && indiceSenha<=0){
             indiceSenha--;
         } else if(caracterSenhaAtual == CTRLC){
-            printf("\nAbortando programa......\n");
+            printf("\n%sAbortando programa......%s\n", colorir('v'), colorir('r'));
             exit(1);
         }
     }

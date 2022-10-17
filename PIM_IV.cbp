@@ -36,7 +36,13 @@
 		<Unit filename="sistemaLogin/utils/getUsuario.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="sistemaLogin/utils/trimEspacosEmBranco.c">
+		<Unit filename="sistemaLogin/utils/login.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="utils/cores_terminal.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="utils/trimEspacosEmBranco.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Extensions />

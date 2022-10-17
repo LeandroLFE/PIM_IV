@@ -3,13 +3,13 @@
 
 #include "../../headers/headers_programa.h"
 
-const char* getUsuario(int tamanhoMaxUsuario){
+const char* getUsuario(const int tamanhoMaxUsuario){
     const char* usuario;
     do{
         printf("\nInforme seu usuario: ");
         usuario = trimEspacosEmBrancoGetS(tamanhoMaxUsuario);
         if(strcmp(usuario, "")==0){
-            printf("\nUsuario nao informado, tente novamente\n");
+            printf("\n%sUsuario nao informado, tente novamente%s\n", colorir('v'), colorir('r'));
         }
     }while(strcmp(usuario, "")==0);
 
