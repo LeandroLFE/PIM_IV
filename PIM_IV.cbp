@@ -39,6 +39,9 @@
 		<Unit filename="sistemaLogin/utils/login.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="utils/clearScreen.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="utils/trimEspacosEmBranco.c">
 			<Option compilerVar="CC" />
 		</Unit>
