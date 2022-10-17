@@ -1,5 +1,8 @@
 #include<stdio.h>
+#include<stdlib.h>
 #include<conio.h>
+
+#include "../../headers/headers_programa.h"
 
 #define ENTER 13
 #define BACKSPACE 8
