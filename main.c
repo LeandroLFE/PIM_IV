@@ -11,18 +11,23 @@
 #define VERMELHO_CLARO 12
 #define BRANCO 15
 
-
 int main(void){
     int login;
+    int formulario = 1;
 
     setColor(BRANCO);
-    login = sistemaLogin(TAMANHO_MAX_USUARIO, TAMANHO_MAX_SENHA);
+    do{
+        login = sistemaLogin(TAMANHO_MAX_USUARIO, TAMANHO_MAX_SENHA);
 
-    if(login != 0){
-        printfColorido("\n\nUsuario/Senha invalidos, tente novamente\n\n", VERMELHO_CLARO);
-    }
+        if(login != 0){
+            printfColorido("\n\nUsuario/Senha invalidos, tente novamente\n\n", VERMELHO_CLARO);
+        }
 
-    printfColorido("\n\nLogin realizado com sucesso!\n\n", CIANO);
+        printfColorido("\n\nLogin realizado com sucesso!\n\n", CIANO);
+
+        formulario = sistemaFormulario(50, 50, 50, 50, 50);
+
+    }while(formulario==1);
 
     return 0;
 }
