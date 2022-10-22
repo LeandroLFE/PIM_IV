@@ -53,9 +53,7 @@ const char* getSenha(const int tamanhoMaxSenha){
                 Beep(400, 1);
             }
         } else if(caracterSenhaAtual == CTRLC){
-            setColor(VERMELHO_CLARO);
-            printf("\n\nAbortando programa......\n\n");
-            setColor(BRANCO);
+            printfColorido("\n\nAbortando programa......\n\n", VERMELHO_CLARO);
             exit(1);
         }
     }

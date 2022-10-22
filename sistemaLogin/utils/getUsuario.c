@@ -14,9 +14,7 @@ const char* getUsuario(const int tamanhoMaxUsuario){
         printf("\nInforme seu usuario: ");
         strcpy(usuario, trimEspacosEmBrancoGetS(tamanhoMaxUsuario));
         if(strcmp(usuario, "")==0){
-            setColor(VERMELHO_CLARO);
-            printf("\nUsuario nao informado, tente novamente\n");
-            setColor(BRANCO);
+            printfColorido("\nUsuario nao informado, tente novamente\n", VERMELHO_CLARO);
         }
     }while(strcmp(usuario, "")==0);
     retorno = usuario;

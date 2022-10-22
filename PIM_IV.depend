@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1666040317 source:d:\documentos\unip\4_bimestre\pim_iv\main.c
+1666456011 source:d:\documentos\unip\4_bimestre\pim_iv\main.c
 	<stdio.h>
 	<stdlib.h>
 	"headers/headers_programa.h"
 
 1665944338 d:\documentos\unip\4_bimestre\pim_iv\headers\sistemalogin.h
 
-1666040244 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\sistemalogin.c
+1666457093 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\sistemalogin.c
 	<stdio.h>
 	<string.h>
 	<windows.h>
@@ -16,7 +16,7 @@
 	<stdio.h>
 	<string.h>
 
-1666040244 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\getsenha.c
+1666457093 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\getsenha.c
 	<conio.h>
 	<stdio.h>
 	<stdlib.h>
@@ -27,29 +27,31 @@
 	<stdio.h>
 	<string.h>
 
-1666039319 d:\documentos\unip\4_bimestre\pim_iv\headers\headers_programa.h
+1666456760 d:\documentos\unip\4_bimestre\pim_iv\headers\headers_programa.h
 	<windows.h>
 
-1666040317 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\getusuario.c
+1666457093 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\getusuario.c
 	<stdio.h>
 	<string.h>
 	"../../headers/headers_programa.h"
 
-1666040317 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\login.c
+1666457093 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\login.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"../../headers/headers_programa.h"
 
-1666034708 source:d:\documentos\unip\4_bimestre\pim_iv\utils\trimespacosembranco.c
+1666456011 source:d:\documentos\unip\4_bimestre\pim_iv\utils\trimespacosembranco.c
 	<stdio.h>
 	<string.h>
 
-1666039343 source:d:\documentos\unip\4_bimestre\pim_iv\utils\cores_terminal.c
+1666456349 source:d:\documentos\unip\4_bimestre\pim_iv\utils\cores_terminal.c
 	<stdio.h>
 	<windows.h>
 	"../headers/headers_programa.h"
 
 1666034708 source:d:\documentos\unip\4_bimestre\pim_iv\utils\clearscreen.c
 	<windows.h>
+
+1666456731 source:d:\documentos\unip\4_bimestre\pim_iv\utils\printfcolorido.c
 

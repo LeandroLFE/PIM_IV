@@ -19,9 +19,7 @@ int login(const char* user, const int tamanhoMaxUsuario, const char* password, c
     pArquivo = fopen("./arquivos/entrada/login.txt", "r");
 
     if(pArquivo == NULL){
-        setColor(VERMELHO_CLARO);
-        printf("\nErro ao tentar abrir arquivo, contate o administrador\n");
-        setColor(BRANCO);
+        printfColorido("\nErro ao tentar abrir arquivo, contate o administrador\n", VERMELHO_CLARO);
         exit(-1);
     }
 

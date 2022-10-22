@@ -19,14 +19,10 @@ int main(void){
     login = sistemaLogin(TAMANHO_MAX_USUARIO, TAMANHO_MAX_SENHA);
 
     if(login != 0){
-        setColor(VERMELHO_CLARO);
-        printf("\n\nUsuario/Senha invalidos, tente novamente\n\n");
-        setColor(BRANCO);
+        printfColorido("\n\nUsuario/Senha invalidos, tente novamente\n\n", VERMELHO_CLARO);
     }
 
-    setColor(CIANO);
-    printf("\n\nLogin realizado com sucesso!\n\n");
-    setColor(BRANCO);
+    printfColorido("\n\nLogin realizado com sucesso!\n\n", CIANO);
 
     return 0;
 }
