@@ -2,7 +2,13 @@
 #include<stdlib.h>
 #include<string.h>
 
+#include "../../headers/headers_programa.h"
+
 #define NULL_CHARACTER '\0'
+
+//cores
+#define VERMELHO_CLARO 12
+#define BRANCO 15
 
 int login(const char* user, const int tamanhoMaxUsuario, const char* password, const int tamanhoMaxSenha){
     FILE* pArquivo;
@@ -13,7 +19,7 @@ int login(const char* user, const int tamanhoMaxUsuario, const char* password, c
     pArquivo = fopen("./arquivos/entrada/login.txt", "r");
 
     if(pArquivo == NULL){
-        printf("\nErro ao tentar abrir arquivo, contate o administrador\n");
+        printfColorido("\nErro ao tentar abrir arquivo, contate o administrador\n", VERMELHO_CLARO);
         exit(-1);
     }
 

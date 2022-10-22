@@ -3,6 +3,10 @@
 
 #include "../../headers/headers_programa.h"
 
+//cores
+#define VERMELHO_CLARO 12
+#define BRANCO 15
+
 const char* getUsuario(const int tamanhoMaxUsuario){
     char usuario[tamanhoMaxUsuario];
     const char* retorno;
@@ -10,7 +14,7 @@ const char* getUsuario(const int tamanhoMaxUsuario){
         printf("\nInforme seu usuario: ");
         strcpy(usuario, trimEspacosEmBrancoGetS(tamanhoMaxUsuario));
         if(strcmp(usuario, "")==0){
-            printf("\nUsuario nao informado, tente novamente\n");
+            printfColorido("\nUsuario nao informado, tente novamente\n", VERMELHO_CLARO);
         }
     }while(strcmp(usuario, "")==0);
     retorno = usuario;

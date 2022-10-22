@@ -42,6 +42,12 @@
 		<Unit filename="utils/clearScreen.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="utils/cores_terminal.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="utils/printfColorido.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="utils/trimEspacosEmBranco.c">
 			<Option compilerVar="CC" />
 		</Unit>

@@ -1,44 +1,59 @@
 # depslib dependency file v1.0
-1666030449 source:d:\documentos\unip\4_bimestre\pim_iv\main.c
+1666456011 source:d:\documentos\unip\4_bimestre\pim_iv\main.c
 	<stdio.h>
 	<stdlib.h>
 	"headers/headers_programa.h"
 
 1665944338 d:\documentos\unip\4_bimestre\pim_iv\headers\sistemalogin.h
 
-1666027439 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\sistemalogin.c
+1666457093 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\sistemalogin.c
 	<stdio.h>
 	<string.h>
 	<windows.h>
 	"../headers/headers_programa.h"
 
-1666033060 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\getsenha.c
+1665932785 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\sistemalogin2.c
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	"../headers/headers_programa.h"
+
+1666457093 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\getsenha.c
 	<conio.h>
 	<stdio.h>
 	<stdlib.h>
 	<windows.h>
+	"../../headers/headers_programa.h"
 
 1665958842 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\trimespacosembranco.c
 	<stdio.h>
 	<string.h>
 
-1666019432 d:\documentos\unip\4_bimestre\pim_iv\headers\headers_programa.h
+1666456760 d:\documentos\unip\4_bimestre\pim_iv\headers\headers_programa.h
 	<windows.h>
 
-1666033265 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\getusuario.c
+1666457093 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\getusuario.c
 	<stdio.h>
 	<string.h>
 	"../../headers/headers_programa.h"
 
-1666031212 source:d:\documentos\unip\4_bimestre\pim_iv\utils\trimespacosembranco.c
-	<stdio.h>
-	<string.h>
-
-1666023871 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\login.c
+1666457093 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\login.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
+	"../../headers/headers_programa.h"
 
-1666019577 source:d:\documentos\unip\4_bimestre\pim_iv\utils\clearscreen.c
+1666456011 source:d:\documentos\unip\4_bimestre\pim_iv\utils\trimespacosembranco.c
+	<stdio.h>
+	<string.h>
+
+1666456349 source:d:\documentos\unip\4_bimestre\pim_iv\utils\cores_terminal.c
+	<stdio.h>
 	<windows.h>
+	"../headers/headers_programa.h"
+
+1666034708 source:d:\documentos\unip\4_bimestre\pim_iv\utils\clearscreen.c
+	<windows.h>
+
+1666456731 source:d:\documentos\unip\4_bimestre\pim_iv\utils\printfcolorido.c
 
