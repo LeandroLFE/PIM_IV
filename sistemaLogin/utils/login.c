@@ -8,7 +8,6 @@
 
 //cores
 #define VERMELHO_CLARO 12
-#define BRANCO 15
 
 int login(const char* user, const int tamanhoMaxUsuario, const char* password, const int tamanhoMaxSenha){
     FILE* pArquivo;

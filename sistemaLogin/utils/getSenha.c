@@ -15,7 +15,6 @@
 
 //cores
 #define VERMELHO_CLARO 12
-#define BRANCO 15
 
 
 const char* getSenha(const int tamanhoMaxSenha){

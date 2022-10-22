@@ -5,7 +5,6 @@
 
 //cores
 #define VERMELHO_CLARO 12
-#define BRANCO 15
 
 const char* getUsuario(const int tamanhoMaxUsuario){
     char usuario[tamanhoMaxUsuario];
