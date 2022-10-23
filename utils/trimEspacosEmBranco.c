@@ -2,6 +2,8 @@
 #include<string.h>
 
 #define NULL_CHARACTER '\0'
+#define PULA_LINHA 10
+#define ENTER 13
 #define ESPACO 32
 
 const char* trimEspacosEmBrancoGetS(const int tamanhoMaxUsuario){
@@ -11,9 +13,10 @@ const char* trimEspacosEmBrancoGetS(const int tamanhoMaxUsuario){
     int lTrimIndex = 0;
 
     fgets(stringInicial, tamanhoMaxUsuario, stdin);
+
     stringInicial[strlen(stringInicial)-1] = NULL_CHARACTER;
 
-    int rTrimIndex = strlen(stringInicial)-1;
+    int rTrimIndex = strlen(stringInicial);
 
     if(strcmp(stringInicial, "")==0){
         return "";
@@ -30,9 +33,9 @@ const char* trimEspacosEmBrancoGetS(const int tamanhoMaxUsuario){
         return "";
     }
 
-    for(int i=rTrimIndex; i>=lTrimIndex; i--){
+    for(int i=rTrimIndex-1; i>=lTrimIndex; i--){
         if(stringInicial[i] != ESPACO){
-            rTrimIndex = i;
+            rTrimIndex = i+1;
             break;
         }
     }
@@ -41,10 +44,10 @@ const char* trimEspacosEmBrancoGetS(const int tamanhoMaxUsuario){
         return "";
     }
 
-    for(int i=lTrimIndex; i<=rTrimIndex; i++){
+    for(int i=lTrimIndex; i<rTrimIndex; i++){
         novaString[i-lTrimIndex] = stringInicial[i];
     }
-    novaString[rTrimIndex-lTrimIndex+1] = NULL_CHARACTER;
+    novaString[rTrimIndex-lTrimIndex] = NULL_CHARACTER;
     fflush(stdin);
     retorno = novaString;
     return retorno;
