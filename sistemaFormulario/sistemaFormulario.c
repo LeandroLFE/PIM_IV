@@ -4,7 +4,7 @@
 
 #include "../headers/headers_programa.h"
 
-#define AJUSTE_TAMANHO_STR 2
+#define AJUSTE_TAMANHO_STR 3
 #define TAMANHO_CEP 8
 #define TAMANHO_CPF 11
 #define TAMANHO_ESTADO 2
