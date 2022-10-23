@@ -10,7 +10,7 @@ const char* getCPF(const int tamanhoCPF, const int ajusteTamanhoStr){
     int validaCPF;
     const char* retorno;
     do{
-        printf("\nInforme seu CPF: ");
+        printf("\nCPF: ");
         strcpy(CPF, trimEspacosEmBrancoGetS(tamanhoCPF+ajusteTamanhoStr));
         validaCPF = validacaoCPF(CPF, tamanhoCPF);
         if(validaCPF != 0){

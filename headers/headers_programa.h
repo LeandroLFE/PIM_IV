@@ -25,3 +25,5 @@ int sistemaLogin(const int tamanhoMaxUsuario, const int tamanhoMaxSenha);
 const char* trimEspacosEmBrancoGetS(const int tamanhoMaxUsuario);
 
 int validacaoCPF(const char* CPF, int tamanhoCPF);
+
+int validacaoTelefone(const char* Telefone, int tamanhoTelefone);

@@ -27,16 +27,22 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="sistemaFormulario/get/getCPF.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sistemaFormulario/get/getNome.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sistemaFormulario/get/getTelefone.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="sistemaFormulario/sistemaFormulario.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="sistemaFormulario/utils/getCPF.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="sistemaFormulario/utils/getNome.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="sistemaFormulario/utils/validacaoCPF.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sistemaFormulario/utils/validacaoTelefone.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="sistemaLogin/sistemaLogin.c">

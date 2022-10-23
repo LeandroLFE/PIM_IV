@@ -77,10 +77,10 @@ int sistemaFormulario(const int tamanhoMaxNome, const int tamanhoMaxRua, const i
         strcpy(auxCPF, getCPF(TAMANHO_CPF, AJUSTE_TAMANHO_STR));
         cpf = auxCPF;
 
-        /*
-        strcpy(auxTelefone, getTelefone(TAMANHO_TELEFONE));
+        strcpy(auxTelefone, getTelefone(TAMANHO_TELEFONE, AJUSTE_TAMANHO_STR));
         telefone = auxTelefone;
 
+        /*
         strcpy(auxRua, getRua(tamanhoMaxRua));
         rua = auxRua;
 

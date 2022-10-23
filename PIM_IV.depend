@@ -18,7 +18,7 @@
 	<windows.h>
 	"../headers/headers_programa.h"
 
-1666475732 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\getsenha.c
+1666525766 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\getsenha.c
 	<conio.h>
 	<stdio.h>
 	<stdlib.h>
@@ -29,7 +29,7 @@
 	<stdio.h>
 	<string.h>
 
-1666475468 d:\documentos\unip\4_bimestre\pim_iv\headers\headers_programa.h
+1666528680 d:\documentos\unip\4_bimestre\pim_iv\headers\headers_programa.h
 	<windows.h>
 
 1666464754 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\getusuario.c
@@ -43,7 +43,7 @@
 	<string.h>
 	"../../headers/headers_programa.h"
 
-1666458819 source:d:\documentos\unip\4_bimestre\pim_iv\utils\trimespacosembranco.c
+1666528075 source:d:\documentos\unip\4_bimestre\pim_iv\utils\trimespacosembranco.c
 	<stdio.h>
 	<string.h>
 
@@ -62,13 +62,13 @@
 	<string.h>
 	"../../headers/headers_programa.h"
 
-1666475769 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\sistemaformulario.c
+1666523774 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\sistemaformulario.c
 	<stdio.h>
 	<string.h>
 	<windows.h>
 	"../headers/headers_programa.h"
 
-1666475202 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\utils\validacaocpf.c
+1666523501 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\utils\validacaocpf.c
 	<ctype.h>
 	<stdio.h>
 	<stdlib.h>
@@ -78,4 +78,25 @@
 	<stdio.h>
 	<string.h>
 	"../../headers/headers_programa.h"
+
+1666523387 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\getcpf.c
+	<stdio.h>
+	<string.h>
+	"../../headers/headers_programa.h"
+
+1666525189 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\getnome.c
+	<stdio.h>
+	<string.h>
+	"../../headers/headers_programa.h"
+
+1666524819 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\gettelefone.c
+	<stdio.h>
+	<string.h>
+	"../../headers/headers_programa.h"
+
+1666525000 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\utils\validacaotelefone.c
+	<ctype.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
 
