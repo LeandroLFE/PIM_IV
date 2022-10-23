@@ -7,7 +7,6 @@
 
 
 //caracteres
-#define ENTER 13
 #define BACKSPACE 8
 #define CTRLC 3
 #define ENTER 13
