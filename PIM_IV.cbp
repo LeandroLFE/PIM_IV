@@ -27,10 +27,31 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="sistemaFormulario/get/getBairro.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sistemaFormulario/get/getCEP.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="sistemaFormulario/get/getCPF.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="sistemaFormulario/get/getCidade.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sistemaFormulario/get/getComplemento.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sistemaFormulario/get/getEstado.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="sistemaFormulario/get/getNome.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sistemaFormulario/get/getNumero.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sistemaFormulario/get/getRua.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="sistemaFormulario/get/getTelefone.c">
@@ -39,7 +60,16 @@
 		<Unit filename="sistemaFormulario/sistemaFormulario.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="sistemaFormulario/utils/validacaoCEP.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="sistemaFormulario/utils/validacaoCPF.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sistemaFormulario/utils/validacaoEstado.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sistemaFormulario/utils/validacaoNumero.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="sistemaFormulario/utils/validacaoTelefone.c">

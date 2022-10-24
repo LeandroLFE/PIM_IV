@@ -17,7 +17,10 @@
 #define BRANCO 15
 
 
-int sistemaFormulario(const int tamanhoMaxNome, const int tamanhoMaxRua, const int tamanhoMaxBairroCidade, const int tamanhoMaxEmail, const int tamanhoMaxComorbidades){
+int sistemaFormulario(const int tamanhoMaxNome, const int tamanhoMaxRua, const int tamanhoMaxNumero,
+                      const int tamanhoMaxComplemento, const int tamanhoMaxBairroCidade,
+                      const int tamanhoMaxEmail, const int tamanhoMaxComorbidades){
+
     char auxNome[tamanhoMaxNome+AJUSTE_TAMANHO_STR];
     const char* nome;
 
@@ -28,9 +31,12 @@ int sistemaFormulario(const int tamanhoMaxNome, const int tamanhoMaxRua, const i
     const char* telefone;
 
     char auxRua[tamanhoMaxRua+AJUSTE_TAMANHO_STR];
-    const char rua;
+    const char* rua;
 
     int numero;
+
+    char auxComplemento[tamanhoMaxComplemento+AJUSTE_TAMANHO_STR];
+    const char* complemento;
 
     char auxBairro[tamanhoMaxBairroCidade+AJUSTE_TAMANHO_STR];
     const char* bairro;
@@ -67,10 +73,10 @@ int sistemaFormulario(const int tamanhoMaxNome, const int tamanhoMaxRua, const i
         setColor(MARROM);
         printf("************************************");
         printf("\n*******BEM VINDO AO SISTEMA*********");
-        printf("\n**********FORMULARIO*****************");
+        printf("\n**********FORMULARIO****************");
         printf("\n************************************\n");
         setColor(BRANCO);
-
+        /*
         strcpy(auxNome, getNome(tamanhoMaxNome));
         nome = auxNome;
 
@@ -80,11 +86,13 @@ int sistemaFormulario(const int tamanhoMaxNome, const int tamanhoMaxRua, const i
         strcpy(auxTelefone, getTelefone(TAMANHO_TELEFONE, AJUSTE_TAMANHO_STR));
         telefone = auxTelefone;
 
-        /*
         strcpy(auxRua, getRua(tamanhoMaxRua));
         rua = auxRua;
 
-        numero = getNumero();
+        numero = getNumero(tamanhoMaxNumero, AJUSTE_TAMANHO_STR);
+
+        strcpy(auxBairro, getComplemento(tamanhoMaxComplemento));
+        bairro = auxBairro;
 
         strcpy(auxBairro, getBairro(tamanhoMaxBairroCidade));
         bairro = auxBairro;
@@ -92,15 +100,17 @@ int sistemaFormulario(const int tamanhoMaxNome, const int tamanhoMaxRua, const i
         strcpy(auxCidade, getCidade(tamanhoMaxBairroCidade));
         cidade = auxCidade;
 
-        strcpy(auxEstado, getEstado(TAMANHO_ESTADO));
+        strcpy(auxEstado, getEstado(TAMANHO_ESTADO, AJUSTE_TAMANHO_STR));
         estado = auxEstado;
 
-        strcpy(auxCEP, getCEP(TAMANHO_CEP));
+        strcpy(auxCEP, getCEP(TAMANHO_CEP, AJUSTE_TAMANHO_STR));
         cep = auxCEP;
+        */
 
         strcpy(auxDataNascimento, getData(TAMANHO_DATA));
         dataNascimento = auxDataNascimento;
 
+        /*
         strcpy(auxEmail, getData(tamanhoMaxEmail));
         email = auxEmail;
 
