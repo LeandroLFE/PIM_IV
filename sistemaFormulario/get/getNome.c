@@ -15,7 +15,7 @@ const char* getNome(const int tamanhoMaxNome){
         printf("\nNome: ");
         strcpy(nome, trimEspacosEmBrancoGetS(tamanhoMaxNome));
         if(strcmp(nome, "")==0){
-            printfColorido("\nNome nao informado, tente novamente\n", VERMELHO_CLARO);
+            printfColorido("\nNome não informado, tente novamente\n", VERMELHO_CLARO);
         }
     }while(strcmp(nome, "")==0);
 

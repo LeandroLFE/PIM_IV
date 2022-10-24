@@ -3,7 +3,7 @@
 #include<stdlib.h>
 #include<string.h>
 
-int validacaoTelefone(const char* telefone, int tamanhoTelefone){
+int validacaoTelefone(const char* telefone, const int tamanhoTelefone){
     if(strlen(telefone) != tamanhoTelefone){
         return 1;
     }

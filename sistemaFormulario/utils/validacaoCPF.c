@@ -3,7 +3,7 @@
 #include<stdlib.h>
 #include<string.h>
 
-int validacaoCPF(const char* CPF, int tamanhoCPF){
+int validacaoCPF(const char* CPF, const int tamanhoCPF){
     int digito1;
     int digito2;
     int somaDigito1 = 0;

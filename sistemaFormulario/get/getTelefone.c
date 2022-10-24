@@ -8,7 +8,7 @@
 
 const char* getTelefone(const int tamanhoTelefone, const int ajusteTamanhoStr){
 
-  char telefone[tamanhoTelefone];
+    char telefone[tamanhoTelefone];
     const char* retorno;
     int validaTelefone;
     do{
@@ -16,7 +16,7 @@ const char* getTelefone(const int tamanhoTelefone, const int ajusteTamanhoStr){
         strcpy(telefone, trimEspacosEmBrancoGetS(tamanhoTelefone+ajusteTamanhoStr));
         validaTelefone = validacaoTelefone(telefone, tamanhoTelefone);
         if(validaTelefone != 0){
-            printfColorido("\nTelefone invalido, formato: DDD com 2 digitos + 9XXXXXXXX tente novamente\n", VERMELHO_CLARO);
+            printfColorido("\nTelefone inválido, formato: DDD com 2 digitos + 9XXXXXXXX tente novamente\n", VERMELHO_CLARO);
         }
     }while(validaTelefone != 0);
     retorno = telefone;

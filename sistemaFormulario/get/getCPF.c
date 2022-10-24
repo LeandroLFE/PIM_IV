@@ -14,7 +14,7 @@ const char* getCPF(const int tamanhoCPF, const int ajusteTamanhoStr){
         strcpy(CPF, trimEspacosEmBrancoGetS(tamanhoCPF+ajusteTamanhoStr));
         validaCPF = validacaoCPF(CPF, tamanhoCPF);
         if(validaCPF != 0){
-            printfColorido("\nCPF invalido, tente novamente\n", VERMELHO_CLARO);
+            printfColorido("\nCPF inválido, apenas numeros com digito verificador válido, tente novamente\n", VERMELHO_CLARO);
         }
     }while(validaCPF != 0);
     retorno = CPF;
