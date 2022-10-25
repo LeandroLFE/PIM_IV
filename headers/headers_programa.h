@@ -1,5 +1,7 @@
 #include<windows.h>
 
+int calculaIdade(const char* txtData);
+
 void clearScreen(HANDLE hConsole);
 
 const char* getBairro(const int tamanhoMaxBairro);
@@ -9,6 +11,8 @@ const char* getCidade(const int tamanhoMaxCidade);
 const char* getCEP(const int tamanhoCEP, const int ajusteTamanhoStr);
 
 const char* getCPF(const int tamanhoCPF, const int ajusteTamanhoStr);
+
+const char* getData(const int tamanhoData, const int ajusteTamanhoStr);
 
 const char* getEstado(const int tamanhoEstado, const int ajusteTamanhoStr);
 
@@ -39,6 +43,8 @@ int sistemaLogin(const int tamanhoMaxUsuario, const int tamanhoMaxSenha);
 const char* trimEspacosEmBrancoGetS(const int tamanhoMaxUsuario);
 
 int validacaoCPF(const char* CPF, const int tamanhoCPF);
+
+int validacaoData(const char* data, const int tamanhoData);
 
 int validacaoEstado(const char* estado, const int tamanhoEstado);
 

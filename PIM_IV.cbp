@@ -42,6 +42,9 @@
 		<Unit filename="sistemaFormulario/get/getComplemento.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="sistemaFormulario/get/getData.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="sistemaFormulario/get/getEstado.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -60,10 +63,16 @@
 		<Unit filename="sistemaFormulario/sistemaFormulario.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="sistemaFormulario/utils/calculaIdade.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="sistemaFormulario/utils/validacaoCEP.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="sistemaFormulario/utils/validacaoCPF.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sistemaFormulario/utils/validacaoData.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="sistemaFormulario/utils/validacaoEstado.c">
