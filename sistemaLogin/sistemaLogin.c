@@ -39,7 +39,6 @@ int sistemaLogin(const int tamanhoMaxUsuario, const int tamanhoMaxSenha){
         if(resultadoLogin != 0){
             printfColorido("\n\nUsuário/Senha inválidos, tente novamente\n\n", VERMELHO_CLARO);
             Sleep(500);
-            clearScreen(hStdout);
         }
     }while(resultadoLogin != 0);
 

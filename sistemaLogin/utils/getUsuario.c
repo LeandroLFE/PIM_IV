@@ -6,6 +6,7 @@
 //cores
 #define VERMELHO_CLARO 12
 
+
 const char* getUsuario(const int tamanhoMaxUsuario){
     char usuario[tamanhoMaxUsuario];
     const char* retorno;

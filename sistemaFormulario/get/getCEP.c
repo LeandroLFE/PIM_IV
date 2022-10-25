@@ -8,7 +8,7 @@
 
 const char* getCEP(const int tamanhoCEP, const int ajusteTamanhoStr){
 
-    char CEP[tamanhoCEP];
+    char CEP[tamanhoCEP+ajusteTamanhoStr];
     const char* retorno;
     int validaCEP;
     do{

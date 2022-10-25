@@ -8,7 +8,7 @@
 
 const char* getEstado(const int tamanhoEstado, const int ajusteTamanhoStr){
 
-    char estado[tamanhoEstado];
+    char estado[tamanhoEstado+ajusteTamanhoStr];
     const char* retorno;
     int validaEstado;
     do{

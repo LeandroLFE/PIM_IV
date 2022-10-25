@@ -76,7 +76,7 @@ int sistemaFormulario(const int tamanhoMaxNome, const int tamanhoMaxRua, const i
         printf("\n**********FORMULARIO****************");
         printf("\n************************************\n");
         setColor(BRANCO);
-        /*
+
         strcpy(auxNome, getNome(tamanhoMaxNome));
         nome = auxNome;
 
@@ -91,8 +91,8 @@ int sistemaFormulario(const int tamanhoMaxNome, const int tamanhoMaxRua, const i
 
         numero = getNumero(tamanhoMaxNumero, AJUSTE_TAMANHO_STR);
 
-        strcpy(auxBairro, getComplemento(tamanhoMaxComplemento));
-        bairro = auxBairro;
+        strcpy(auxComplemento, getComplemento(tamanhoMaxComplemento));
+        complemento = auxComplemento;
 
         strcpy(auxBairro, getBairro(tamanhoMaxBairroCidade));
         bairro = auxBairro;
@@ -105,9 +105,8 @@ int sistemaFormulario(const int tamanhoMaxNome, const int tamanhoMaxRua, const i
 
         strcpy(auxCEP, getCEP(TAMANHO_CEP, AJUSTE_TAMANHO_STR));
         cep = auxCEP;
-        */
 
-        strcpy(auxDataNascimento, getData(TAMANHO_DATA));
+        strcpy(auxDataNascimento, getData(TAMANHO_DATA, AJUSTE_TAMANHO_STR));
         dataNascimento = auxDataNascimento;
 
         /*
