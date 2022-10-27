@@ -1,3 +1,4 @@
+#include<locale.h>
 #include<stdio.h>
 #include<string.h>
 
@@ -11,7 +12,10 @@ const char* getUsuario(const int tamanhoMaxUsuario){
     char usuario[tamanhoMaxUsuario];
     const char* retorno;
     do{
-        printf("\nInforme seu usuário: ");
+        setlocale(LC_ALL, "Portuguese_Brazil.1252");
+        printf("\n%s", "Informe seu usuário: ");
+        setlocale(LC_ALL, "C");
+
         strcpy(usuario, trimEspacosEmBrancoGetS(tamanhoMaxUsuario));
         if(strcmp(usuario, "")==0){
             printfColorido("\nUsuário não informado, tente novamente\n", VERMELHO_CLARO);

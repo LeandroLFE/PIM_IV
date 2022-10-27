@@ -62,6 +62,8 @@ int sistemaFormulario(const int tamanhoMaxNome, const int tamanhoMaxRua, const i
     char auxComorbidades[tamanhoMaxComorbidades+AJUSTE_TAMANHO_STR];
     const char* comorbidades;
 
+    int salvamentoConfirmado;
+
     HANDLE hStdout;
     hStdout = GetStdHandle(STD_OUTPUT_HANDLE);
 
@@ -106,30 +108,43 @@ int sistemaFormulario(const int tamanhoMaxNome, const int tamanhoMaxRua, const i
         strcpy(auxCEP, getCEP(TAMANHO_CEP, AJUSTE_TAMANHO_STR));
         cep = auxCEP;
 
-        strcpy(auxDataNascimento, getData(TAMANHO_DATA, AJUSTE_TAMANHO_STR));
+        strcpy(auxDataNascimento, getDataNascimento(TAMANHO_DATA, AJUSTE_TAMANHO_STR));
         dataNascimento = auxDataNascimento;
 
-        /*
-        strcpy(auxEmail, getData(tamanhoMaxEmail));
+        strcpy(auxEmail, getEmail(tamanhoMaxEmail, AJUSTE_TAMANHO_STR));
         email = auxEmail;
 
-        strcpy(auxDataDiagnostico, getData(TAMANHO_DATA));
+        strcpy(auxDataDiagnostico, getDataDiagnostico(TAMANHO_DATA, AJUSTE_TAMANHO_STR, dataNascimento));
         dataDiagnostico = auxDataDiagnostico;
 
-        strcpy(auxComorbidades getComorbidades(tamanhoMaxComorbidades));
+        strcpy(auxComorbidades, getComorbidades(tamanhoMaxComorbidades));
         comorbidades = auxComorbidades;
 
         // salvar em arquivo o paciente
+        clearScreen(hStdout);
+        fflush(stdin);
+        salvamentoConfirmado = exibeResumoFormulario(nome, cpf, telefone, rua, numero, complemento,
+                                                     bairro, cidade, estado, cep, dataNascimento,
+                                                     email, dataDiagnostico, comorbidades );
+        if(salvamentoConfirmado == 0){
 
-        // salvar o paciente em grupo de risco em outro arquivo
-        */
-        printf("\nDeseja inserir dados de um novo paciente?: S para sim: ");
-        scanf("%c", &novoPaciente);
+            // salvar o paciente em grupo de risco em outro arquivo
+            do{
+                printf("\nDeseja inserir dados de um novo paciente?: S para sim: ");
+                novoPaciente = getchar();
+                fflush(stdin);
 
-        if(novoPaciente != 's' && novoPaciente != 'S'){
-            printfColorido("\nDeslogando...\n", CIANO);
+                if(novoPaciente == 'n' || novoPaciente == 'N' ){
+                    printfColorido("\nDeslogando...\n", CIANO);
+                    Sleep(500);
+                } else if (novoPaciente == 's' || novoPaciente == 'S'){
+                    Sleep(500);
+                }
+            }while(!((novoPaciente == 's' || novoPaciente == 'S')||(novoPaciente == 'n' || novoPaciente == 'N')));
+
+        } else{
+            novoPaciente = 's';
         }
-        Sleep(500);
     }while(novoPaciente == 's' || novoPaciente == 'S');
 
     return 1;

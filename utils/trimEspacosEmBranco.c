@@ -1,3 +1,4 @@
+#include<locale.h>
 #include<stdio.h>
 #include<string.h>
 
@@ -11,7 +12,7 @@ const char* trimEspacosEmBrancoGetS(const int tamanhoMaxUsuario){
     char novaString[tamanhoMaxUsuario];
     const char* retorno;
 
-    int lTrimIndex = 0;
+    int lTrimIndex = -1;
 
     fgets(stringInicial, tamanhoMaxUsuario, stdin);
 
@@ -24,32 +25,32 @@ const char* trimEspacosEmBrancoGetS(const int tamanhoMaxUsuario){
     }
 
     for(int i=0; i<strlen(stringInicial); i++){
+        if(stringInicial[i] != ESPACO){
+            break;
+        }
         lTrimIndex = i;
-        if(stringInicial[i] != ESPACO){
-            break;
-        }
     }
 
-    if(lTrimIndex == rTrimIndex){
+    if(lTrimIndex+1 == rTrimIndex){
         return "";
     }
 
-    for(int i=rTrimIndex-1; i>=lTrimIndex; i--){
+    for(int i=rTrimIndex-1; i>=lTrimIndex+1; i--){
         if(stringInicial[i] != ESPACO){
-            rTrimIndex = i+1;
             break;
         }
+        rTrimIndex = i;
     }
 
-    if(lTrimIndex>=rTrimIndex){
+    if(lTrimIndex+1>=rTrimIndex){
         return "";
     }
 
-    for(int i=lTrimIndex; i<rTrimIndex; i++){
-        novaString[i-lTrimIndex] = stringInicial[i];
+    for(int i=lTrimIndex+1; i<rTrimIndex; i++){
+        novaString[i-lTrimIndex-1] = stringInicial[i];
     }
-    novaString[rTrimIndex-lTrimIndex] = NULL_CHARACTER;
-    fflush(stdin);
+    novaString[rTrimIndex-(lTrimIndex+1)] = NULL_CHARACTER;
     retorno = novaString;
+    fflush(stdin);
     return retorno;
 }

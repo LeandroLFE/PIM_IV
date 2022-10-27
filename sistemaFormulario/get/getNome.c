@@ -10,14 +10,20 @@ const char* getNome(const int tamanhoMaxNome){
 
     char nome[tamanhoMaxNome];
     const char* retorno;
+    int validaNome = 1;
 
     do{
         printf("\nNome: ");
         strcpy(nome, trimEspacosEmBrancoGetS(tamanhoMaxNome));
         if(strcmp(nome, "")==0){
-            printfColorido("\nNome não informado, tente novamente\n", VERMELHO_CLARO);
+            printfColorido("\nNome nï¿½o informado, tente novamente\n", VERMELHO_CLARO);
         }
-    }while(strcmp(nome, "")==0);
+        validaNome = validacaoNome(nome);
+        if(validaNome != 0){
+            printfColorido("\nNome invï¿½lido, nï¿½o pode conter nï¿½meros, tente novamente\n", VERMELHO_CLARO);
+        }
+
+    }while(strcmp(nome, "")==0 || validaNome != 0);
 
     retorno = nome;
     return retorno;

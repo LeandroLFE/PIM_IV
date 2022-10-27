@@ -10,7 +10,6 @@ const char* getRua(const int tamanhoMaxRua){
 
     char rua[tamanhoMaxRua];
     const char* retorno;
-    int validaRua;
     do{
         printf("\nRua: ");
         strcpy(rua, trimEspacosEmBrancoGetS(tamanhoMaxRua));

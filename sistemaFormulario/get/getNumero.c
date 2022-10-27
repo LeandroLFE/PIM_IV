@@ -1,3 +1,4 @@
+#include<locale.h>
 #include<stdio.h>
 #include<string.h>
 
@@ -8,11 +9,13 @@
 
 const int getNumero(const int tamanhoMaxNumero, const int ajusteTamanhoStr){
     int numero;
-    int validaNumero;
     char textoNumero[tamanhoMaxNumero+ajusteTamanhoStr];
 
     do{
+        setlocale(LC_ALL, "Portuguese_Brazil.1252");
         printf("\nNúmero: ");
+        setlocale(LC_ALL, "C");
+
         strcpy(textoNumero, trimEspacosEmBrancoGetS(tamanhoMaxNumero+ajusteTamanhoStr));
         numero = validacaoNumero(textoNumero, tamanhoMaxNumero);
         if(numero < 1){

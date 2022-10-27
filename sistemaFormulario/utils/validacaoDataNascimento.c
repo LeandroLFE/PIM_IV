@@ -6,15 +6,15 @@
 #include "../../headers/headers_programa.h"
 
 
-int validacaoData(const char* data, const int tamanhoData){
-    if(strlen(data) != tamanhoData){
+int validacaoDataNascimento(const char* dataNascimento, const int tamanhoData){
+    if(strlen(dataNascimento) != tamanhoData){
         return -1;
     }
     for(int i=0; i<tamanhoData; i++){
-        if(!isdigit(data[i])){
+        if(!isdigit(dataNascimento[i])){
             return -2;
         }
     }
 
-    return calculaIdade(data);
+    return calculaIdade(dataNascimento);
 }

@@ -39,10 +39,19 @@
 		<Unit filename="sistemaFormulario/get/getCidade.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="sistemaFormulario/get/getComorbidades.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="sistemaFormulario/get/getComplemento.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="sistemaFormulario/get/getData.c">
+		<Unit filename="sistemaFormulario/get/getDataDiagnostico.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sistemaFormulario/get/getDataNascimento.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sistemaFormulario/get/getEmail.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="sistemaFormulario/get/getEstado.c">
@@ -66,16 +75,28 @@
 		<Unit filename="sistemaFormulario/utils/calculaIdade.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="sistemaFormulario/utils/exibeResumoFormulario.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="sistemaFormulario/utils/validacaoCEP.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="sistemaFormulario/utils/validacaoCPF.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="sistemaFormulario/utils/validacaoData.c">
+		<Unit filename="sistemaFormulario/utils/validacaoDataDiagnostico.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sistemaFormulario/utils/validacaoDataNascimento.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sistemaFormulario/utils/validacaoEmail.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="sistemaFormulario/utils/validacaoEstado.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sistemaFormulario/utils/validacaoNome.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="sistemaFormulario/utils/validacaoNumero.c">
