@@ -33,7 +33,8 @@ int sistemaFormulario(const int tamanhoMaxNome, const int tamanhoMaxRua, const i
     char auxRua[tamanhoMaxRua+AJUSTE_TAMANHO_STR];
     const char* rua;
 
-    int numero;
+    char auxNumero[tamanhoMaxNumero+AJUSTE_TAMANHO_STR];
+    const char* numero;
 
     char auxComplemento[tamanhoMaxComplemento+AJUSTE_TAMANHO_STR];
     const char* complemento;
@@ -91,7 +92,8 @@ int sistemaFormulario(const int tamanhoMaxNome, const int tamanhoMaxRua, const i
         strcpy(auxRua, getRua(tamanhoMaxRua));
         rua = auxRua;
 
-        numero = getNumero(tamanhoMaxNumero, AJUSTE_TAMANHO_STR);
+        strcpy(auxNumero, getNumero(tamanhoMaxNumero, AJUSTE_TAMANHO_STR));
+        numero = auxNumero;
 
         strcpy(auxComplemento, getComplemento(tamanhoMaxComplemento));
         complemento = auxComplemento;

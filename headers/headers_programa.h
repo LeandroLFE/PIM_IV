@@ -5,7 +5,7 @@ int calculaIdade(const char* txtData);
 void clearScreen(HANDLE hConsole);
 
 int exibeResumoFormulario(const char* nome, const char* cpf, const char* telefone, const char* rua,
-                          int numero, const char* complemento, const char* bairro, const char* cidade, const char* estado,
+                          const char* numero, const char* complemento, const char* bairro, const char* cidade, const char* estado,
                           const char* cep, const char* dataNascimento, const char* email, const char* dataDiagnostico,
                           const char* comorbidades);
 
@@ -31,7 +31,7 @@ const char* getEstado(const int tamanhoEstado, const int ajusteTamanhoStr);
 
 const char* getNome(const int tamanhoMaxNome);
 
-const int getNumero(const int tamanhoMaxNumero, const int ajusteTamanhoStr);
+const char* getNumero(const int tamanhoMaxNumero, const int ajusteTamanhoStr);
 
 const char* getRua(const int tamanhoMaxRua);
 

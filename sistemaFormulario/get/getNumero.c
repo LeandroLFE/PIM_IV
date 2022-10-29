@@ -7,9 +7,10 @@
 //cores
 #define VERMELHO_CLARO 12
 
-const int getNumero(const int tamanhoMaxNumero, const int ajusteTamanhoStr){
-    int numero;
+const char* getNumero(const int tamanhoMaxNumero, const int ajusteTamanhoStr){
     char textoNumero[tamanhoMaxNumero+ajusteTamanhoStr];
+    const char* retorno;
+    int validaNumero;
 
     do{
         setlocale(LC_ALL, "Portuguese_Brazil.1252");
@@ -17,11 +18,12 @@ const int getNumero(const int tamanhoMaxNumero, const int ajusteTamanhoStr){
         setlocale(LC_ALL, "C");
 
         strcpy(textoNumero, trimEspacosEmBrancoGetS(tamanhoMaxNumero+ajusteTamanhoStr));
-        numero = validacaoNumero(textoNumero, tamanhoMaxNumero);
-        if(numero < 1){
+        validaNumero = validacaoNumero(textoNumero, tamanhoMaxNumero);
+        if(validaNumero < 1){
             printfColorido("\nNúmero inválido, somente números positivos até 999999, tente novamente\n", VERMELHO_CLARO);
         }
-    }while(numero < 1);
+    }while(validaNumero < 1);
 
-    return numero;
+    retorno = textoNumero;
+    return retorno;
 }
