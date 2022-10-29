@@ -51,5 +51,9 @@ int validacaoCPF(const char* CPF, const int tamanhoCPF){
         return 3;
     }
 
+    if(verificaSeArquivoJaExiste(CPF) != 0){
+        return 4;
+    }
+
     return 0;
 }

@@ -79,3 +79,5 @@ int validacaoNome(const char* nome);
 int validacaoNumero(const char* textoNumero, const int tamanhoMaxNumero);
 
 int validacaoTelefone(const char* telefone, const int tamanhoTelefone);
+
+int verificaSeArquivoJaExiste(const char* cpf);
