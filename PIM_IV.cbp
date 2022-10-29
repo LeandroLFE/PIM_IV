@@ -78,6 +78,9 @@
 		<Unit filename="sistemaFormulario/utils/exibeResumoFormulario.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="sistemaFormulario/utils/salvarArquivo.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="sistemaFormulario/utils/validacaoCEP.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -105,6 +108,9 @@
 		<Unit filename="sistemaFormulario/utils/validacaoTelefone.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="sistemaFormulario/utils/verificaArquivoJaExiste.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="sistemaLogin/sistemaLogin.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -118,6 +124,9 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="utils/clearScreen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="utils/converteCParaWindows1252.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="utils/cores_terminal.c">

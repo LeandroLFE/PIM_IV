@@ -30,7 +30,7 @@
 	<stdio.h>
 	<string.h>
 
-1666894501 d:\documentos\unip\4_bimestre\pim_iv\headers\headers_programa.h
+1667005933 d:\documentos\unip\4_bimestre\pim_iv\headers\headers_programa.h
 	<windows.h>
 
 1666889384 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\getusuario.c
@@ -67,14 +67,13 @@
 	<string.h>
 	"../../headers/headers_programa.h"
 
-1666894079 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\sistemaformulario.c
+1667005654 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\sistemaformulario.c
 	<stdio.h>
 	<string.h>
-	<wchar.h>
 	<windows.h>
 	"../headers/headers_programa.h"
 
-1666624509 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\utils\validacaocpf.c
+1666904955 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\utils\validacaocpf.c
 	<ctype.h>
 	<stdio.h>
 	<stdlib.h>
@@ -85,15 +84,14 @@
 	<string.h>
 	"../../headers/headers_programa.h"
 
-1666624942 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\getcpf.c
+1666904321 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\getcpf.c
 	<stdio.h>
 	<string.h>
 	"../../headers/headers_programa.h"
 
-1666889511 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\getnome.c
+1666896229 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\getnome.c
 	<stdio.h>
 	<string.h>
-	<wchar.h>
 	"../../headers/headers_programa.h"
 
 1666710442 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\gettelefone.c
@@ -122,7 +120,7 @@
 	<string.h>
 	"../../headers/headers_programa.h"
 
-1666894708 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\getnumero.c
+1666913149 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\getnumero.c
 	<locale.h>
 	<stdio.h>
 	<string.h>
@@ -221,7 +219,7 @@
 	<string.h>
 	"../../headers/headers_programa.h"
 
-1666893017 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\utils\exiberesumoformulario.c
+1666913195 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\utils\exiberesumoformulario.c
 	<ctype.h>
 	<locale.h>
 	<stdio.h>
@@ -234,4 +232,22 @@
 	<stdlib.h>
 	<string.h>
 	<wchar.h>
+
+1666904955 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\utils\verificaarquivojaexiste.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1666985127 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\utils\salvararquivo.c
+	<locale.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<wchar.h>
+	<windows.h>
+
+1667004252 source:d:\documentos\unip\4_bimestre\pim_iv\utils\convertecparawindows1252.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
 

@@ -4,6 +4,8 @@ int calculaIdade(const char* txtData);
 
 void clearScreen(HANDLE hConsole);
 
+const char* converteCParaWindows1252(const char* entrada);
+
 int exibeResumoFormulario(const char* nome, const char* cpf, const char* telefone, const char* rua,
                           const char* numero, const char* complemento, const char* bairro, const char* cidade, const char* estado,
                           const char* cep, const char* dataNascimento, const char* email, const char* dataDiagnostico,
@@ -44,6 +46,11 @@ const char* getUsuario(const int tamanhoMaxUsuario);
 int login(const char* user, const int tamanhoMaxUsuario, const char* password, const int tamanhoMaxSenha);
 
 void printfColorido(const char* texto, int cor);
+
+int salvarArquivoPaciente(const char* nome, const char* cpf, const char* telefone, const char* rua,
+                          const char* numero, const char* complemento, const char* bairro, const char* cidade, const char* estado,
+                          const char* cep, const char* dataNascimento, const char* email, const char* dataDiagnostico,
+                          const char* comorbidades);
 
 void setColor(int ForgC);
 

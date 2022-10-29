@@ -64,6 +64,8 @@ int sistemaFormulario(const int tamanhoMaxNome, const int tamanhoMaxRua, const i
     const char* comorbidades;
 
     int salvamentoConfirmado;
+    int statusSalvamentoPaciente;
+    int statusSalvamentoGrupoDeRisco;
 
     HANDLE hStdout;
     hStdout = GetStdHandle(STD_OUTPUT_HANDLE);
@@ -129,7 +131,17 @@ int sistemaFormulario(const int tamanhoMaxNome, const int tamanhoMaxRua, const i
                                                      bairro, cidade, estado, cep, dataNascimento,
                                                      email, dataDiagnostico, comorbidades );
         if(salvamentoConfirmado == 0){
+            printfColorido("\nSalvando....\n", CIANO);
+            //salvar
+            statusSalvamentoPaciente = salvarArquivoPaciente(nome, cpf, telefone, rua, numero, complemento,
+                                                     bairro, cidade, estado, cep, dataNascimento,
+                                                     email, dataDiagnostico, comorbidades );
 
+            if(statusSalvamentoPaciente != 0){
+                printfColorido("\nErro ao salvar arquivo do paciente, tente novamente\n", VERMELHO_CLARO);
+            } else{
+                printfColorido("\nSalvo arquivo do paciente com sucesso!\n", CIANO);
+            }
             // salvar o paciente em grupo de risco em outro arquivo
             do{
                 printf("\nDeseja inserir dados de um novo paciente?: S para sim: ");
