@@ -55,25 +55,32 @@ int calculaIdade(const char* txtData){
     }
 
     /*
-        Caso a data informada seja superior a data atual, ou 150 anos antes do ano atual, retorna -4
+        Caso a data informada seja superior a data atual, retorna -4
 
     */
-    if( anoAtual < ano || (anoAtual == ano && mesAtual < mes) || (anoAtual == ano && mesAtual == mes && diaAtual < dia) || anoAtual - ano > 150 ){
+    if( anoAtual < ano || (anoAtual == ano && mesAtual < mes) || (anoAtual == ano && mesAtual == mes && diaAtual < dia)){
         return -4;
     }
 
     /*
-        Caso o mês informado seja maior do que 12, retorna -5
+        Caso o ano informado seja 150 anos antes do ano atual, retorna -5
     */
-    if( mes > 12 ){
+    if(anoAtual - ano > 150){
         return -5;
     }
 
     /*
-        Caso o dia informado seja superior a quantidade de dias possíveis do mês, retorna -6
+        Caso o mês informado seja maior do que 12, retorna -6
+    */
+    if( mes > 12 ){
+        return -6;
+    }
+
+    /*
+        Caso o dia informado seja superior a quantidade de dias possíveis do mês, retorna -7
     */
     if(dia > diasDeCadaMes[mes-1]){
-        return -6;
+        return -7;
     }
 
 

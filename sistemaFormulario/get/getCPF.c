@@ -26,7 +26,16 @@ const char* getCPF(const int tamanhoCPF, const int ajusteTamanhoStr){
             e informa ao usuário de acordo
         */
         if(validaCPF != 0){
-            printfColorido("\nCPF inválido, apenas numeros com digito verificador válido, tente novamente\n", VERMELHO_CLARO);
+            switch(validaCPF){
+            case 1:
+                printfColorido("\nCPF com tamanho inválido, tente novamente\n", VERMELHO_CLARO);
+                break;
+            case 4:
+                printfColorido("\nCPF já cadastrado, tente novamente\n", VERMELHO_CLARO);
+                break;
+            default:
+                printfColorido("\nCPF inválido, apenas números com digito verificador válido, tente novamente\n", VERMELHO_CLARO);
+            }
         }
     }while(validaCPF != 0); // repete o loop de obter um novo CPF enquanto este estiver inválido
     retorno = CPF;

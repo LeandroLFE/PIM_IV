@@ -1,13 +1,13 @@
 # depslib dependency file v1.0
-1667065559 source:d:\documentos\unip\4_bimestre\pim_iv\main.c
+1667100974 source:d:\documentos\unip\4_bimestre\pim_iv\main.c
+	<locale.h>
 	<stdio.h>
 	<stdlib.h>
-	<locale.h>
 	"headers/headers_programa.h"
 
 1665944338 d:\documentos\unip\4_bimestre\pim_iv\headers\sistemalogin.h
 
-1667067469 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\sistemalogin.c
+1667101083 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\sistemalogin.c
 	<stdio.h>
 	<string.h>
 	<windows.h>
@@ -19,7 +19,7 @@
 	<windows.h>
 	"../headers/headers_programa.h"
 
-1667065319 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\getsenha.c
+1667098223 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\getsenha.c
 	<conio.h>
 	<stdio.h>
 	<stdlib.h>
@@ -30,21 +30,21 @@
 	<stdio.h>
 	<string.h>
 
-1667065700 d:\documentos\unip\4_bimestre\pim_iv\headers\headers_programa.h
+1667097822 d:\documentos\unip\4_bimestre\pim_iv\headers\headers_programa.h
 
-1667068966 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\getusuario.c
+1667098121 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\getusuario.c
 	<locale.h>
 	<stdio.h>
 	<string.h>
 	"../../headers/headers_programa.h"
 
-1667066911 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\login.c
+1667098513 source:d:\documentos\unip\4_bimestre\pim_iv\sistemalogin\utils\login.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"../../headers/headers_programa.h"
 
-1667062982 source:d:\documentos\unip\4_bimestre\pim_iv\utils\trimespacosembranco.c
+1667098949 source:d:\documentos\unip\4_bimestre\pim_iv\utils\trimespacosembranco.c
 	<stdio.h>
 	<string.h>
 
@@ -56,7 +56,7 @@
 1667065700 source:d:\documentos\unip\4_bimestre\pim_iv\utils\clearscreen.c
 	<windows.h>
 
-1667065932 source:d:\documentos\unip\4_bimestre\pim_iv\utils\printfcolorido.c
+1667098650 source:d:\documentos\unip\4_bimestre\pim_iv\utils\printfcolorido.c
 	<locale.h>
 	<stdio.h>
 
@@ -65,7 +65,7 @@
 	<string.h>
 	"../../headers/headers_programa.h"
 
-1667068377 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\sistemaformulario.c
+1667099191 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\sistemaformulario.c
 	<stdio.h>
 	<string.h>
 	<windows.h>
@@ -82,17 +82,17 @@
 	<string.h>
 	"../../headers/headers_programa.h"
 
-1667073837 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\getcpf.c
+1667150703 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\getcpf.c
 	<stdio.h>
 	<string.h>
 	"../../headers/headers_programa.h"
 
-1667070889 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\getnome.c
+1667100823 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\getnome.c
 	<stdio.h>
 	<string.h>
 	"../../headers/headers_programa.h"
 
-1667070961 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\gettelefone.c
+1667150526 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\gettelefone.c
 	<stdio.h>
 	<string.h>
 	"../../headers/headers_programa.h"
@@ -103,28 +103,28 @@
 	<stdlib.h>
 	<string.h>
 
-1667072740 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\getbairro.c
+1667100332 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\getbairro.c
 	<stdio.h>
 	<string.h>
 	"../../headers/headers_programa.h"
 
-1667072870 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\getcidade.c
+1667100604 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\getcidade.c
 	<stdio.h>
 	<string.h>
 	"../../headers/headers_programa.h"
 
-1667073130 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\getestado.c
+1667146421 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\getestado.c
 	<stdio.h>
 	<string.h>
 	"../../headers/headers_programa.h"
 
-1667072098 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\getnumero.c
+1667100823 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\getnumero.c
 	<locale.h>
 	<stdio.h>
 	<string.h>
 	"../../headers/headers_programa.h"
 
-1667072870 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\getrua.c
+1667100823 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\getrua.c
 	<stdio.h>
 	<string.h>
 	"../../headers/headers_programa.h"
@@ -141,12 +141,12 @@
 	<stdlib.h>
 	<string.h>
 
-1667072536 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\getcomplemento.c
+1667100604 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\getcomplemento.c
 	<stdio.h>
 	<string.h>
 	"../../headers/headers_programa.h"
 
-1667073837 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\getcep.c
+1667100383 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\getcep.c
 	<stdio.h>
 	<string.h>
 	"../../headers/headers_programa.h"
@@ -169,14 +169,14 @@
 	<string.h>
 	"../../headers/headers_programa.h"
 
-1666706075 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\utils\calculaidade.c
+1667151189 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\utils\calculaidade.c
 	<ctype.h>
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	<time.h>
 
-1666831686 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\getemail.c
+1667151845 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\getemail.c
 	<stdio.h>
 	<string.h>
 	"../../headers/headers_programa.h"
@@ -187,13 +187,13 @@
 	<stdlib.h>
 	<string.h>
 
-1666889602 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\getdatadiagnostico.c
+1667145875 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\getdatadiagnostico.c
 	<locale.h>
 	<stdio.h>
 	<string.h>
 	"../../headers/headers_programa.h"
 
-1666831093 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\getdatanascimento.c
+1667151250 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\getdatanascimento.c
 	<stdio.h>
 	<string.h>
 	"../../headers/headers_programa.h"
@@ -212,12 +212,12 @@
 	<string.h>
 	"../../headers/headers_programa.h"
 
-1666832042 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\getcomorbidades.c
+1667100604 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\get\getcomorbidades.c
 	<stdio.h>
 	<string.h>
 	"../../headers/headers_programa.h"
 
-1666913195 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\utils\exiberesumoformulario.c
+1667101283 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\utils\exiberesumoformulario.c
 	<ctype.h>
 	<locale.h>
 	<stdio.h>
@@ -231,7 +231,7 @@
 	<string.h>
 	<wchar.h>
 
-1666904955 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\utils\verificaarquivojaexiste.c
+1667100012 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\utils\verificaarquivojaexiste.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -244,84 +244,84 @@
 	<wchar.h>
 	<windows.h>
 
-1667004252 source:d:\documentos\unip\4_bimestre\pim_iv\utils\convertecparawindows1252.c
+1667098637 source:d:\documentos\unip\4_bimestre\pim_iv\utils\convertecparawindows1252.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 
-1667005949 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\utils\salvararquivopaciente.c
+1667100012 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\utils\salvararquivopaciente.c
 	<locale.h>
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"../../headers/headers_programa.h"
 
-1667060585 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\utils\salvararquivogrupoderisco.c
+1667100289 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\utils\salvararquivogrupoderisco.c
 	<locale.h>
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"../../headers/headers_programa.h"
 
-1667065700 source:d:\documentos\unip\4_bimestre\pim_iv\externos\clearscreen.c
+1667100924 source:d:\documentos\unip\4_bimestre\pim_iv\externos\clearscreen.c
 	<windows.h>
 
-1667065932 source:d:\documentos\unip\4_bimestre\pim_iv\externos\cores_terminal.c
+1667100950 source:d:\documentos\unip\4_bimestre\pim_iv\externos\cores_terminal.c
 	<stdio.h>
 	<windows.h>
 	"../headers/headers_programa.h"
 
-1666831591 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\validacao\validacaodatadiagnostico.c
+1667099486 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\validacao\validacaodatadiagnostico.c
 	<ctype.h>
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"../../headers/headers_programa.h"
 
-1666831115 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\validacao\validacaodatanascimento.c
+1667099486 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\validacao\validacaodatanascimento.c
 	<ctype.h>
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"../../headers/headers_programa.h"
 
-1666829076 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\validacao\validacaoemail.c
+1667151985 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\validacao\validacaoemail.c
 	<ctype.h>
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 
-1667069308 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\validacao\validacaonome.c
+1667099651 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\validacao\validacaonome.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 
-1667073981 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\validacao\validacaocep.c
+1667099249 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\validacao\validacaocep.c
 	<ctype.h>
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 
-1667071890 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\validacao\validacaocpf.c
+1667099373 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\validacao\validacaocpf.c
 	<ctype.h>
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"../../headers/headers_programa.h"
 
-1667073630 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\validacao\validacaoestado.c
+1667099638 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\validacao\validacaoestado.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 
-1667073981 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\validacao\validacaonumero.c
+1667099787 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\validacao\validacaonumero.c
 	<ctype.h>
 	<math.h>
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 
-1667073981 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\validacao\validacaotelefone.c
+1667099810 source:d:\documentos\unip\4_bimestre\pim_iv\sistemaformulario\validacao\validacaotelefone.c
 	<ctype.h>
 	<stdio.h>
 	<stdlib.h>

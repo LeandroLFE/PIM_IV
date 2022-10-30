@@ -25,7 +25,11 @@ const char* getTelefone(const int tamanhoTelefone, const int ajusteTamanhoStr){
             e informa ao usuário de acordo
         */
         if(validaTelefone != 0){
-            printfColorido("\nTelefone inválido, formato: DDD com 2 digitos + XXXXXXXXX, tente novamente\n", VERMELHO_CLARO);
+            if(validaTelefone == 3){
+                printfColorido("\nTelefone inválido, formato: DDD (2 primeiros digitos) não podem conter zeros, tente novamente\n", VERMELHO_CLARO);
+            } else{
+                printfColorido("\nTelefone inválido, formato: DDD com 2 digitos + XXXXXXXXX (total 11 dígitos), tente novamente\n", VERMELHO_CLARO);
+            }
         }
     }while(validaTelefone != 0); // repete o loop de obter um novo telefone enquanto este estiver inválido
     retorno = telefone;

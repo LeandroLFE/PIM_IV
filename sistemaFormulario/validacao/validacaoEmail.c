@@ -32,10 +32,11 @@ int validacaoEmail(const char* email, const int tamanhoMaxEmail){
     */
     for(i=1; i< strlen(email) && email[i] != '@'; i++){
         /*
-            Caso o character atual seja uma letra, numero, ou algum character especial listado
+            Caso o character atual seja uma letra, numero, ou algum character especial listado,
+            se não lido um deles, retorna 2
         */
         if((email[i]>='a' && email[i]<='z') || (email[i] >= '0' && email[i] <= '9')
-            || email[i] == '#' || email[i] == '!' || email[i] == '%' || email[i] == '‘' || email[i] == '&'
+            || email[i] == '#' || email[i] == '!' || email[i] == '%' || email[i] == '\'' || email[i] == '&'
             || email[i] == '+' || email[i] == '*' || email[i] == '-' || email[i] == '/' || email[i] == '='
             || email[i] == '?' || email[i] == '^' || email[i] == '`' || email[i] == '.' || email[i] == '{'
             || email[i] == '|' || email[i] == '}' || email[i] == '~' || email[i] == '$'
@@ -48,30 +49,32 @@ int validacaoEmail(const char* email, const int tamanhoMaxEmail){
             } else{
                 caracterEspecial = 0;
             }
+        } else{
+            return 2;
         }
     }
 
     /*
-        caso o ultimo character antes do @ tenha sido especial retorna 2 por não ser válido
+        caso o ultimo character antes do @ tenha sido especial retorna 3 por não ser válido
     */
     if(caracterEspecial == 1){
-        return 2;
+        return 3;
     }
 
     /*
-        caso não possua mais espaço para mais letras após o final do for retorna 3
+        caso não possua mais espaço para mais letras após o final do for retorna 4
     */
     if (i >= strlen(email)-1){
-        return 3;
+        return 4;
     }
 
     i++; // adiciona mais um ao índice, esperando ser a posição logo após o @
     /*
         Verifica se o primeiro character após o @ não é uma letra de 'a' a 'z',
-        retorna 4 caso possua um character diferente
+        retorna 5 caso possua um character diferente
     */
     if(!((email[i]>='a' && email[i]<='z'))){
-        return 4;
+        return 5;
     }
     i++; // adiciona mais 1 ao indice
     /*
@@ -79,34 +82,34 @@ int validacaoEmail(const char* email, const int tamanhoMaxEmail){
         até encontrar o '.' (ou o fim da string caso não exista)
     */
     for(; i<strlen(email) && email[i] != '.'; i++){
-        // caso o character lido não seja uma letra nem um ponto, retorna 5
+        // caso o character lido não seja uma letra nem um ponto, retorna 6
         if(!(email[i]>='a' && email[i]<='z')){
-            return 5;
+            return 6;
         }
     }
 
-    // Caso o '.' não tenha sido encontrado, retorna 6
+    // Caso o '.' não tenha sido encontrado, retorna 7
     if (i >= strlen(email)){
-        return 6;
+        return 7;
     }
 
     i++; // adiciona mais 1 ao indice (posição do character após o '.')
 
     /*
         verifica se o character logo após o ponto é uma letra valida,
-        caso não seja, retorna 7
+        caso não seja, retorna 8
     */
     if(!((email[i]>='a' && email[i]<='z'))){
-        return 7;
+        return 8;
     }
 
     i++; // adiciona mais 1 ao indice
 
     // varre o email do '.' + 2 até o fim da string (ou até um segundo ponto)
     for(; i<strlen(email) && email[i] != '.'; i++){
-        // caso o character lido não seja uma letra nem um ponto, retorna 8
+        // caso o character lido não seja uma letra nem um ponto, retorna 9
         if(!(email[i]>='a' && email[i]<='z')){
-            return 8;
+            return 9;
         }
     }
 
@@ -120,19 +123,19 @@ int validacaoEmail(const char* email, const int tamanhoMaxEmail){
 
     /*
         verifica se o character logo após o segundo ponto é uma letra valida,
-        caso não seja, retorna 9
+        caso não seja, retorna 10
     */
     if(!((email[i]>='a' && email[i]<='z'))){
-        return 9;
+        return 10;
     }
 
     i++; // adiciona mais 1 ao indice
 
     // varre o email do segundo '.' + 2 até o fim da string
     for(; i<strlen(email); i++){
-        // caso o character lido não seja uma letra, retorna 10
+        // caso o character lido não seja uma letra, retorna 11
         if(!(email[i]>='a' && email[i]<='z')){
-            return 10;
+            return 11;
         }
     }
 

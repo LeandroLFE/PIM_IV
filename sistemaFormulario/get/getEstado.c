@@ -25,7 +25,7 @@ const char* getEstado(const int tamanhoEstado, const int ajusteTamanhoStr){
             printfColorido("\nEstado inválido, formato com 2 digitos dentre os estados brasileiros, tente novamente\n", VERMELHO_CLARO);
         }
     }while(validaEstado != 0); // repete o loop de obter um novo estado enquanto este estiver inválido
-    retorno = estado;
+    retorno = strupr(estado);
     // retorna o estado inserido após validado
     return retorno;
 }

@@ -52,17 +52,17 @@ int validacaoDataDiagnostico(const char* dataDiagnostico, const int tamanhoData,
     idade = calculaIdade(dataDiagnostico);
 
     /*
-        caso o retorno for um numero negativo, retorna o numero (de -3 a -6)
+        caso o retorno for um numero negativo, retorna o numero (de -3 a -7)
     */
     if(idade < 0 ){
         return idade;
     }
 
     /*
-        caso a data de diagnostico informada seja inferior a data de nascimento, retorna -7
+        caso a data de diagnostico informada seja inferior a data de nascimento, retorna -8
     */
     if(verificaDataDiagnosticoNaoInferiorADataNascimento(dataDiagnostico, dataNascimento) != 0){
-        return -7;
+        return -8;
     }
 
     // retorna um numero positivo >=0 na variável idade caso validada
