@@ -1,8 +1,5 @@
 // Importação das bibliotecas utilizadas no arquivo
 #include<ctype.h> // isdigit()
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
 #include<time.h> // time_t time() struct tm* localtime()
 
 int verificaBissexto(long ano){

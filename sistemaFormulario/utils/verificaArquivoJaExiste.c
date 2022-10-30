@@ -1,6 +1,5 @@
 // Importação das bibliotecas utilizadas no arquivo
 #include<stdio.h> // fopen() fclose()
-#include<stdlib.h>
 #include<string.h> // strcat()
 
 

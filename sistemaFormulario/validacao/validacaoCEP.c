@@ -1,7 +1,5 @@
-// definição das cores utilizadas neste método
+// Importação das bibliotecas utilizadas no arquivo
 #include<ctype.h> // isdigit()
-#include<stdio.h>
-#include<stdlib.h>
 #include<string.h> // strlen()
 
 

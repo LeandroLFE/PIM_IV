@@ -1,7 +1,5 @@
 // Importação das bibliotecas utilizadas no arquivo
 #include<locale.h> // setlocale()
-#include<stdio.h>
-#include<stdlib.h>
 
 // Inclui o cabeçalho com todos os cabeçalhos dos métodos utilizados no programa
 #include "headers/headers_programa.h"

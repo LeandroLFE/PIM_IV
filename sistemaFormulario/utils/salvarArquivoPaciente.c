@@ -1,7 +1,6 @@
-// Inclui o cabeçalho com todos os cabeçalhos dos métodos utilizados no programa
+// Importação das bibliotecas utilizadas no arquivo
 #include<locale.h> // setlocale()
 #include<stdio.h>  // fopen() fprintf() fputc() fclose()
-#include<stdlib.h>
 #include<string.h> // strcat() strcpy()
 
 // Inclui o cabeçalho com todos os cabeçalhos dos métodos utilizados no programa

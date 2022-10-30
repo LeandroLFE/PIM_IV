@@ -1,8 +1,6 @@
 // Importação das bibliotecas utilizadas no arquivo
-#include<ctype.h>
 #include<locale.h> // setlocale()
 #include<stdio.h> // printf() getchar() fflush()
-#include<string.h>
 
 // Inclui o cabeçalho com todos os cabeçalhos dos métodos utilizados no programa
 #include "../../headers/headers_programa.h"
@@ -10,6 +8,8 @@
 // definição das cores utilizadas neste método
 #define MARROM 6
 #define VERMELHO_CLARO 12
+#define MAGENTA_CLARO 13
+#define AMARELO 14
 
 int exibeResumoFormulario(const char* nome, const char* cpf, const char* telefone, const char* rua,
                           const char* numero, const char* complemento, const char* bairro, const char* cidade, const char* estado,
@@ -43,6 +43,14 @@ int exibeResumoFormulario(const char* nome, const char* cpf, const char* telefon
     setlocale(LC_ALL, "C"); // altera o locale de volta para C para exibir variaveis com acento
     printf("%s", dataDiagnostico);
     printf("\nComorbidades: %s", comorbidades);
+
+    // Mensagem adicional caso o paciente seja ou não do grupo de risco
+    if(avaliaPessoaDoGrupoDeRisco(dataNascimento, comorbidades) >= 0){
+        printfColorido("\n\nATENÇÃO: PACIENTE DO GRUPO DE RISCO!!", MAGENTA_CLARO);
+    } else{
+        printfColorido("\n\nNão pertence ao grupo de risco", AMARELO);
+    }
+
     do{
         setlocale(LC_ALL, "Portuguese_Brazil.1252"); // altera o locale para Portugues para exibir character do texto do printf com acento no terminal
         printf("\n\nResponda S para sim ou N para não: ");

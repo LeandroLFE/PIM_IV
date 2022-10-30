@@ -1,7 +1,7 @@
 // Importação das bibliotecas utilizadas no arquivo
 #include<conio.h> // _getch() _putch()
-#include<stdio.h> // printf() exit()
-#include<stdlib.h>
+#include<stdio.h> // printf()
+#include<stdlib.h> // exit()
 #include<windows.h> // Beep()
 
 // Inclui o cabeçalho com todos os cabeçalhos dos métodos utilizados no programa

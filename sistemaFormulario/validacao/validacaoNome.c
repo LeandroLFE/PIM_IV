@@ -1,6 +1,4 @@
 // Importação das bibliotecas utilizadas no arquivo
-#include<stdio.h>
-#include<stdlib.h>
 #include<string.h> // strlen()
 
 

@@ -1,4 +1,5 @@
 // Importação das bibliotecas utilizadas no arquivo
+#include<locale.h> // setlocale()
 #include<stdio.h> // fflush() printf() getchar()
 #include<string.h> // strcpy()
 #include<windows.h> // Sleep()
@@ -173,7 +174,9 @@ int sistemaFormulario(const int tamanhoMaxNome, const int tamanhoMaxRua, const i
 
             do{
                 // Apresenta opção de inserir dados de um novo paciente
+                setlocale(LC_ALL, "Portuguese_Brazil.1252"); // Altera o locale para Portugues do Brasil, encoding Windows 1252
                 printf("\nDeseja inserir dados de um novo paciente?: S para sim, N para não: ");
+                setlocale(LC_ALL, "C"); // Altera o locale de volta para "C"
                 novoPaciente = getchar(); // leitura de 1 character
                 fflush(stdin); // limpeza do buffer de entrada para eliminar o \n adicional
 

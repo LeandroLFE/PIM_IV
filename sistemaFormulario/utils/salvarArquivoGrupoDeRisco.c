@@ -1,8 +1,8 @@
-// Inclui o cabeçalho com todos os cabeçalhos dos métodos utilizados no programa
+// Importação das bibliotecas utilizadas no arquivo
 #include<locale.h> //setlocale
 #include<stdio.h> // fopen() fprint() fputc() fclose()
 #include<stdlib.h> // itoa()
-#include<string.h> // strcmp() strcat()
+#include<string.h> // strcat()
 
 // Inclui o cabeçalho com todos os cabeçalhos dos métodos utilizados no programa
 #include "../../headers/headers_programa.h"
@@ -14,28 +14,26 @@
 int salvarArquivoGrupoDeRisco(const char* cpf, const char* cep, const char* dataNascimento, const char* comorbidades){
 
     /*
-        Método que avalia e salva se o paciente for do grupo de risco:
-        maiores de 65 com comorbidades
+        Método que salva um arquivo cpf.txt com o CEP e a idade da pessoa em grupo de risco,
+        grupo de risco são pessoas com mais de 65 anos e comorbidades
+        Retorna 1 caso a pessoa não seja do grupo de risco
+        Um número negativo caso ocorra erro
+        E 0 caso tenha salvo com sucesso
     */
 
-    char idadeTexto[5]; //variávvel para armazenar a idade em texto
-    int idade = calculaIdade(dataNascimento); // Calcula a idade a partir da data de nascimento
-
-    /*
-        Caso o paciente tenha 65 anos ou menos
-        Ou não possua comorbidades
-        retorna 1 para o sistema saber que não foi salvo,
-        mas também não é um erro
-    */
-    if(idade <= 65 || strcmp(comorbidades, "") == 0 || strcmp(strlwr(comorbidades), "nao") == 0 || strcmp(strlwr(comorbidades), "não") == 0){
-        return 1;
-    }
-
-
+    // Inicialização das variáveis
+    int idade = avaliaPessoaDoGrupoDeRisco(dataNascimento, comorbidades);
+    char idadeTexto[5]; //variável para armazenar a idade em texto
     FILE* pArquivo = NULL; // ponteiro para o arquivo
     char nomeArquivo[50] = "./arquivos/saida/grupo_de_risco/"; // montagem do nome do arquivo: local onde será salvo
     strcat(nomeArquivo, cpf); // montagem do nome do arquivo: nome do arquivo (cpf)
     strcat(nomeArquivo, ".txt"); // montagem do nome do arquivo: extensão (.txt)
+
+
+    // Se o paciente não é do grupo de risco, retorna 1
+    if(idade < 0){
+        return 1;
+    }
 
     // Caso o programa tenha chegado até aqui é garantido que o paciente é do grupo de risco,
     // informa ao usuário

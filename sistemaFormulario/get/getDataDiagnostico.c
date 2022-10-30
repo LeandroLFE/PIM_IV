@@ -1,5 +1,5 @@
 // Importação das bibliotecas utilizadas no arquivo
-#include<locale.h> // setlocale
+#include<locale.h> // setlocale()
 #include<stdio.h> // printf()
 #include<string.h> // strcpy()
 

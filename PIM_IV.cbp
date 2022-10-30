@@ -78,6 +78,9 @@
 		<Unit filename="sistemaFormulario/sistemaFormulario.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="sistemaFormulario/utils/avaliaPessoaDoGrupoDeRisco.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="sistemaFormulario/utils/calculaIdade.c">
 			<Option compilerVar="CC" />
 		</Unit>

@@ -1,7 +1,5 @@
 // Importação das bibliotecas utilizadas no arquivo
 #include<ctype.h> // isdigit()
-#include<stdio.h>
-#include<stdlib.h>
 #include<string.h> // strlen()
 
 // Inclui o cabeçalho com todos os cabeçalhos dos métodos utilizados no programa

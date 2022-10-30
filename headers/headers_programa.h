@@ -3,6 +3,8 @@
     salvo os métodos clearScreen() e setColor()
 */
 
+int avaliaPessoaDoGrupoDeRisco(const char* dataNascimento, const char* comorbidades);
+
 int calculaIdade(const char* txtData);
 
 void clearScreen(); // externo

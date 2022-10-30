@@ -1,6 +1,6 @@
 // Importação das bibliotecas utilizadas no arquivo
-#include<stdio.h> //fopen()feof() fgets() exit() fclose() exit()
-#include<stdlib.h>
+#include<stdio.h> //fopen()feof() fgets() fclose()
+#include<stdlib.h> // exit()
 #include<string.h> // strcmp()
 
 // Inclui o cabeçalho com todos os cabeçalhos dos métodos utilizados no programa

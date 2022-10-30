@@ -1,6 +1,5 @@
 // Importação das bibliotecas utilizadas no arquivo
-#include<ctype.h> //isdigit()
-#include<stdio.h>
+#include<ctype.h> // isdigit()
 #include<stdlib.h> // itoa()
 #include<string.h> // strlen()
 
