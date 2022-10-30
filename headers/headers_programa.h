@@ -1,8 +1,11 @@
-#include<windows.h>
+/*
+    Cabeçalhos de todos os métodos internos do projeto,
+    salvo os métodos clearScreen() e setColor()
+*/
 
 int calculaIdade(const char* txtData);
 
-void clearScreen(HANDLE hConsole);
+void clearScreen(); // externo
 
 const char* converteCParaWindows1252(const char* entrada);
 
@@ -47,12 +50,14 @@ int login(const char* user, const int tamanhoMaxUsuario, const char* password, c
 
 void printfColorido(const char* texto, int cor);
 
+int salvarArquivoGrupoDeRisco(const char* cpf, const char* cep, const char* dataNascimento, const char* comorbidades);
+
 int salvarArquivoPaciente(const char* nome, const char* cpf, const char* telefone, const char* rua,
                           const char* numero, const char* complemento, const char* bairro, const char* cidade, const char* estado,
                           const char* cep, const char* dataNascimento, const char* email, const char* dataDiagnostico,
                           const char* comorbidades);
 
-void setColor(int ForgC);
+void setColor(int ForgC); // externo
 
 int sistemaFormulario(const int tamanhoMaxNome, const int tamanhoMaxRua, const int tamanhoMaxNumero,
                       const int tamanhoMaxComplemento, const int tamanhoMaxBairroCidade,

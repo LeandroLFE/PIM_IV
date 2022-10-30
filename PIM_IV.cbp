@@ -23,6 +23,12 @@
 			<Add option="-Wall" />
 		</Compiler>
 		<Unit filename="arquivos/entrada/login.txt" />
+		<Unit filename="externos/clearScreen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="externos/cores_terminal.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="headers/headers_programa.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
@@ -78,37 +84,40 @@
 		<Unit filename="sistemaFormulario/utils/exibeResumoFormulario.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="sistemaFormulario/utils/salvarArquivo.c">
+		<Unit filename="sistemaFormulario/utils/salvarArquivoGrupoDeRisco.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="sistemaFormulario/utils/validacaoCEP.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="sistemaFormulario/utils/validacaoCPF.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="sistemaFormulario/utils/validacaoDataDiagnostico.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="sistemaFormulario/utils/validacaoDataNascimento.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="sistemaFormulario/utils/validacaoEmail.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="sistemaFormulario/utils/validacaoEstado.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="sistemaFormulario/utils/validacaoNome.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="sistemaFormulario/utils/validacaoNumero.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="sistemaFormulario/utils/validacaoTelefone.c">
+		<Unit filename="sistemaFormulario/utils/salvarArquivoPaciente.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="sistemaFormulario/utils/verificaArquivoJaExiste.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sistemaFormulario/validacao/validacaoCEP.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sistemaFormulario/validacao/validacaoCPF.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sistemaFormulario/validacao/validacaoDataDiagnostico.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sistemaFormulario/validacao/validacaoDataNascimento.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sistemaFormulario/validacao/validacaoEmail.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sistemaFormulario/validacao/validacaoEstado.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sistemaFormulario/validacao/validacaoNome.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sistemaFormulario/validacao/validacaoNumero.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sistemaFormulario/validacao/validacaoTelefone.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="sistemaLogin/sistemaLogin.c">
@@ -123,13 +132,7 @@
 		<Unit filename="sistemaLogin/utils/login.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="utils/clearScreen.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="utils/converteCParaWindows1252.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="utils/cores_terminal.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="utils/printfColorido.c">

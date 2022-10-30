@@ -1,16 +1,24 @@
-#include<stdio.h>
-#include<string.h>
-#include<windows.h>
+// Importação das bibliotecas utilizadas no arquivo
+#include<stdio.h> // fflush() printf() getchar()
+#include<string.h> // strcpy()
+#include<windows.h> // Sleep()
 
+// Inclui o cabeçalho com todos os cabeçalhos dos métodos utilizados no programa
 #include "../headers/headers_programa.h"
 
-#define AJUSTE_TAMANHO_STR 3
-#define TAMANHO_CEP 8
-#define TAMANHO_CPF 11
-#define TAMANHO_ESTADO 2
-#define TAMANHO_TELEFONE 11
-#define TAMANHO_DATA 8 // ddmmaaaa
+/*
+    Definição do tamanho dos campos que possuem tamanho fixo
+*/
 
+// Ajuste para compor as variáveis e ser possível testar se elas possuem mais characters do que deveria
+#define AJUSTE_TAMANHO_STR 3
+#define TAMANHO_CEP 8 // XXXXXXXX - apenas números
+#define TAMANHO_CPF 11 // XXXXXXXXXXX - apenas números
+#define TAMANHO_ESTADO 2 // Estado de 2 digitos dentre os estados brasileiros
+#define TAMANHO_TELEFONE 11 // 2 Digitos do DDD + 9 digitos de 0 a 9
+#define TAMANHO_DATA 8 // ddmmaaaa - apenas números
+
+// definição das cores utilizadas neste método
 #define CIANO 3
 #define MARROM 6
 #define VERMELHO_CLARO 12
@@ -20,6 +28,8 @@
 int sistemaFormulario(const int tamanhoMaxNome, const int tamanhoMaxRua, const int tamanhoMaxNumero,
                       const int tamanhoMaxComplemento, const int tamanhoMaxBairroCidade,
                       const int tamanhoMaxEmail, const int tamanhoMaxComorbidades){
+
+    // Inicialização das variáveis e seus auxiliares
 
     char auxNome[tamanhoMaxNome+AJUSTE_TAMANHO_STR];
     const char* nome;
@@ -67,21 +77,22 @@ int sistemaFormulario(const int tamanhoMaxNome, const int tamanhoMaxRua, const i
     int statusSalvamentoPaciente;
     int statusSalvamentoGrupoDeRisco;
 
-    HANDLE hStdout;
-    hStdout = GetStdHandle(STD_OUTPUT_HANDLE);
-
     char novoPaciente = 'S';
 
     do{
-        clearScreen(hStdout);
-        fflush(stdin);
-        setColor(MARROM);
+        clearScreen(); // método clearScreen externo
+        fflush(stdin); // limpeza do buffer de entrada
+        setColor(MARROM); // altera a cor da fonte do terminal para MARROM com o método setColor externo
         printf("************************************");
         printf("\n*******BEM VINDO AO SISTEMA*********");
         printf("\n**********FORMULARIO****************");
         printf("\n************************************\n");
-        setColor(BRANCO);
+        setColor(BRANCO); // altera a cor da fonte do terminal para BRANCO com o método setColor externo
 
+        /*
+        Recebe valor oriundo do usuário via terminal e armazena nas variáveis auxiliares,
+        após isso, transmite esse valor para a variável constante de mesmo nome
+        */
         strcpy(auxNome, getNome(tamanhoMaxNome));
         nome = auxNome;
 
@@ -125,41 +136,63 @@ int sistemaFormulario(const int tamanhoMaxNome, const int tamanhoMaxRua, const i
         comorbidades = auxComorbidades;
 
         // salvar em arquivo o paciente
-        clearScreen(hStdout);
-        fflush(stdin);
+        clearScreen(); // método clearScreen externo
+        fflush(stdin); // limpeza do buffer de entrada
+
+        // Apresenta um resumo dos dados informados para o usuário decidir se está correto ou não para salvar em arquivo txt
         salvamentoConfirmado = exibeResumoFormulario(nome, cpf, telefone, rua, numero, complemento,
                                                      bairro, cidade, estado, cep, dataNascimento,
                                                      email, dataDiagnostico, comorbidades );
+
+        // Caso esteja tudo Ok
         if(salvamentoConfirmado == 0){
             printfColorido("\nSalvando....\n", CIANO);
-            //salvar
+            // salva o paciente em um arquivo cpf.txt
             statusSalvamentoPaciente = salvarArquivoPaciente(nome, cpf, telefone, rua, numero, complemento,
                                                      bairro, cidade, estado, cep, dataNascimento,
                                                      email, dataDiagnostico, comorbidades );
 
+            // Caso o arquivo seja gerado ou não, exibe mensagem de acordo
             if(statusSalvamentoPaciente != 0){
                 printfColorido("\nErro ao salvar arquivo do paciente, tente novamente\n", VERMELHO_CLARO);
             } else{
                 printfColorido("\nSalvo arquivo do paciente com sucesso!\n", CIANO);
             }
-            // salvar o paciente em grupo de risco em outro arquivo
-            do{
-                printf("\nDeseja inserir dados de um novo paciente?: S para sim: ");
-                novoPaciente = getchar();
-                fflush(stdin);
 
+
+            // Verifica e salva o paciente em grupo de risco em outro arquivo txt
+            statusSalvamentoGrupoDeRisco = salvarArquivoGrupoDeRisco(cpf, cep, dataNascimento, comorbidades);
+
+
+            // Caso o arquivo seja gerado ou não, exibe mensagem de acordo
+            if(statusSalvamentoGrupoDeRisco == 0){
+                printfColorido("\nSalvo arquivo do paciente do grupo de risco com sucesso!\n", CIANO);
+            } else if(statusSalvamentoGrupoDeRisco < 0){
+                printfColorido("\nErro ao salvar arquivo do paciente do grupo de risco, tente novamente\n", VERMELHO_CLARO);
+            }
+
+            do{
+                // Apresenta opção de inserir dados de um novo paciente
+                printf("\nDeseja inserir dados de um novo paciente?: S para sim, N para não: ");
+                novoPaciente = getchar(); // leitura de 1 character
+                fflush(stdin); // limpeza do buffer de entrada para eliminar o \n adicional
+
+                // Caso o usuario opte por não inserir dados, realiza o logoff
                 if(novoPaciente == 'n' || novoPaciente == 'N' ){
                     printfColorido("\nDeslogando...\n", CIANO);
-                    Sleep(500);
-                } else if (novoPaciente == 's' || novoPaciente == 'S'){
-                    Sleep(500);
+                    Sleep(500); // aguarda 0,5s
                 }
-            }while(!((novoPaciente == 's' || novoPaciente == 'S')||(novoPaciente == 'n' || novoPaciente == 'N')));
-
+                // Caso contrário, reinicia o formulário
+                else if (novoPaciente == 's' || novoPaciente == 'S'){
+                    Sleep(500); // aguarda 0,5s
+                }
+            }while(!((novoPaciente == 's' || novoPaciente == 'S')||(novoPaciente == 'n' || novoPaciente == 'N'))); // Loop que espera s, S, n ou N
+        // Caso o usuário não esteja em conformes com o resumo dos dados inseridos,
+        // Induz a repetição do loop para reiniciar o formulário
         } else{
             novoPaciente = 's';
         }
-    }while(novoPaciente == 's' || novoPaciente == 'S');
+    }while(novoPaciente == 's' || novoPaciente == 'S'); // repete o formulário caso o usuario tenha informado s ou S
 
-    return 1;
+    return 1; // retorna 1 para main
 }

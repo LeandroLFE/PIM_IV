@@ -1,15 +1,30 @@
+// Importação das bibliotecas utilizadas no arquivo
 #include<stdio.h>
 #include<stdlib.h>
-#include<string.h>
+#include<string.h> // strlen()
 
 const char* converteCParaWindows1252(const char* entrada){
+    /*
+        Método que converte acentos de encoding "C" para o encoding "Windows 1252",
+        utilizando conversão do representante numerico de cada letra com acento
+    */
+
+    //Inicialização das variáveis
     char auxEntrada[strlen(entrada)];
     const char* retorno;
     int i = 0;
 
+    // varre o texto de entrada letra a letra
+    // até encontrar uma quebra de linha '\n' = 10
+    // ou o character nulo '\0' = 0
     for(; entrada[i] != 10 && entrada[i] != 0;i++){
+        // alimenta a string auxEntrada com cada letra da string de entrada
         auxEntrada[i] = entrada[i];
         switch(entrada[i]){
+        /*
+            Caso encontre uma letra que corresponda a um acento no encoding "C",
+            substitui pelo correspondente no encoding "windows 1252"
+        */
         case -128: // Ç
             auxEntrada[i] = -57;
             break;
@@ -107,10 +122,11 @@ const char* converteCParaWindows1252(const char* entrada){
             break;
         }
     }
+    // Adiciona o character nulo ao final da string
     auxEntrada[i] = 0;
 
     retorno = auxEntrada;
-
+    // retorna string com acentos convertidos
     return retorno;
 
 }

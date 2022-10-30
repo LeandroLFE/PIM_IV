@@ -1,10 +1,13 @@
 #include <windows.h>
 
-void clearScreen(HANDLE hConsole){
+void clearScreen(){
     /*
-        Método retirado do site da Microsoft para limpeza de tela, Exemplo 2
+        Método externo retirado do site da Microsoft para limpeza de tela, Exemplo 2
         https://learn.microsoft.com/pt-BR/windows/console/clearing-the-screen
     */
+
+    HANDLE hConsole;
+    hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 
     CONSOLE_SCREEN_BUFFER_INFO csbi;
     SMALL_RECT scrollRect;
