@@ -67,7 +67,7 @@ int validacaoCPF(const char* CPF, const int tamanhoCPF){
     restoDivisaoDigito2 = somaDigito2 % tamanhoCPF; // calcula o resto da divisão inteira do somatório1 pelo tamanho do CPF
     /*
         Caso o resto seja 0 ou 1, o digito será 0,
-         Caso contrário, o dígito será o tamanho do CPF - resto_da_divisão
+        Caso contrário, o dígito será o tamanho do CPF - resto_da_divisão
     */
     if(restoDivisaoDigito2 < 2){
         digito2 = 0;
