@@ -12,7 +12,7 @@
 */
 
 // Ajuste para compor as variáveis e ser possível testar se elas possuem mais characters do que deveria
-#define AJUSTE_TAMANHO_STR 3
+#define AJUSTE_TAMANHO_STR 3 // aumenta a capacidade de cada variável do tipo texto para evitar bugs por overflow
 #define TAMANHO_CEP 8 // XXXXXXXX - apenas números
 #define TAMANHO_CPF 11 // XXXXXXXXXXX - apenas números
 #define TAMANHO_ESTADO 2 // Estado de 2 digitos dentre os estados brasileiros

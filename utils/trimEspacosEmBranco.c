@@ -1,6 +1,6 @@
 // Importação das bibliotecas utilizadas no arquivo
 #include<stdio.h> // fgets() fflush()
-#include<string.h> // strlen()
+#include<string.h> // strcmp() strlen()
 
 // define constantes para facilitar a leitura dos characteres
 #define NULL_CHARACTER '\0'
