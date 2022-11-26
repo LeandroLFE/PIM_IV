@@ -7,7 +7,8 @@
 #include "../../headers/headers_programa.h"
 
 // define constante para facilitar a leitura
-#define NULL_CHARACTER '\0'
+#define NULL_CHARACTER 0
+#define ENTER 10
 
 // definição das cores utilizadas neste método
 #define VERMELHO_CLARO 12
@@ -34,8 +35,9 @@ int login(const char* user, const int tamanhoMaxUsuario, const char* password, c
         fgets(usuario, tamanhoMaxUsuario, pArquivo); // varre a linha onde está o usuário, armazenando o valor em usuario
         usuario[strlen(usuario)-1] = NULL_CHARACTER; // substitui a quebra de linha pelo character \0
         fgets(senha, tamanhoMaxSenha, pArquivo); // varre a linha onde está a senha, armazenando o valor em senha
-        senha[strlen(senha)] = NULL_CHARACTER; // substitui a quebra de linha pelo character \0
-
+        if(senha[strlen(senha)-1] == ENTER){
+            senha[strlen(senha)-1] = NULL_CHARACTER; // substitui a quebra de linha pelo character \0
+        }
         if(strcmp(user, usuario)==0 && strcmp(password, senha)==0){ // compara se o usuario e senha informados são válidos
             retorno = 0; // atribui 0 = OK para a variável retorno
             break; // interrompe a execução do Loop While
